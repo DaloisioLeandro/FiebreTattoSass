@@ -1,0 +1,365 @@
+@import "variables/vars";
+
+//nesting
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*estilos genericos*/
+body{
+    font-family:'Raleway', sans-serif;
+background-color: $color-body;
+
+}
+/*estilos de home*/
+
+
+
+/*estilos de main*/
+/*estilos de boostrap*/
+/*mq escritorio*/
+@media screen and  (min-width:1250px) {
+   header{
+      nav{
+         ul{
+            li{
+                display: inline-block;
+                margin-left: 15px;
+                a{
+                  text-decoration: none;
+                  color: rgb(0, 0, 0);
+                }
+            }
+            
+         }
+      }
+   }
+    .nav-index{
+       text-align: right;
+       background-image: linear-gradient(rgba(202, 190, 64, 0.44),rgb(255, 255, 255));
+       padding: 10px;
+    }
+    .nav-responsive{
+      display: none;
+    }
+    .ul-index{
+        list-style: none;
+        
+     }
+     .nav-mobile{
+        display: none;
+     }
+     
+     .container-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+     }
+     .realista{
+        text-align: left;
+        margin-top: 4rem;
+        margin-left: 4rem;
+     }
+    
+     .contenedor-carrusel{
+        display: flex;
+        margin-right: 6rem;
+        justify-content: end;
+        width:$vh-width;
+        margin-left: 50%;
+        
+  
+     }
+     .container-2-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 2rem;
+     }
+     .contenedor-carrusel-2{
+        display: flex;
+        margin-left: 4rem;
+        width: $vh-width;
+  
+     }
+     .trippy{
+        text-align: left;
+        margin-top: 4rem;
+     }
+     .container-3-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+       }
+       .graffiti{
+        text-align: right;
+        margin-top: 4rem;
+        
+     }
+     .contenedor-carrusel-3{
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        width: $vh-width;
+     }
+     .contenedor-carrusel-4{
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        width: $vh-width;
+     }
+     .container-4-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     
+     }
+     .dotwork{
+        text-align: left;
+        margin-top: 4rem;
+        margin-right: 4rem;
+     }
+     .caja-envios{
+        display: inline-block;
+        font-size: 12px;
+        border: 1px solid rgb(202, 190, 64);
+         width: 30%;
+         height: 30%;
+         padding: 10px;
+         margin-right: 10px;
+         
+      }
+      .h3-envios{
+        text-align: center;
+      }
+      .caja-envios-2{
+         display: inline-block;
+          font-size: 12px;
+          border: 1px solid rgb(202, 190, 64);
+          width: 30%;
+          height: 30%;
+          padding: 10px;
+      }
+      .h3-tarjeta{
+        text-align: center;
+      }
+      .camion{
+        width: 20%;
+        height: 20%;
+        transition: 2s;
+        &:hover{
+         width: 100px;
+        height: 100px;
+        }
+      }
+      
+      .tarjeta{
+        width: 13%;
+        height: 13%;
+        transition: 2s;
+        &:hover{
+         width: 70px;
+        height: 70px;
+        }
+      }
+      .siguenos{
+         display: flex;
+         justify-content: center;
+         margin-left: 40px;
+         padding-top: 20px;
+         font-size: 30px;
+      }
+      
+       /*estilo de productos*/
+    .nav-productos{
+        text-align: right;
+        background-image: linear-gradient(rgba(202, 190, 64, 0.44));
+        padding: 10px;
+     }
+}
+
+
+ main img{
+  width: 10%;
+  display: inline;
+  }
+ main{
+ text-align: center;
+  padding: 10px;
+ }
+ 
+  main h1{
+      font-weight: bold;
+      padding-bottom: 15px;
+  }
+ 
+  
+  main h3{
+      text-align: left;
+      padding-top: 15px;
+  }
+  main p {
+      padding-bottom: 15px;
+  }
+  .animacion-siguenos {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-repeat: black;
+    animation-name: example;
+    animation-duration: 5s;
+    font-size: 20px;
+  }
+  @keyframes example {
+    from {top:0;}
+    to {top: 100px; color: black;}
+  }
+   /*estilos footer*/
+   footer{
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
+    nav{
+      ul{
+         li{
+            display: inline-block;
+            padding: 15px 15px;
+            a{
+            text-decoration: none;
+            }
+         }
+      }
+    }
+}
+/*contacto.html*/
+.nav-contacto{
+    text-align: right;
+    background-color: antiquewhite;
+    padding: 10px;
+ }
+ .ul-contacto{
+    list-style: none;
+ }
+/*estilo main*/
+.contacto-h2{
+    text-align: center;
+    font-size: 30px;
+  padding-bottom: 30px;
+}
+
+    /*sobre nosotros.html*/
+    .nav-nosotros{
+        text-align: right;
+        background-color: antiquewhite;
+        padding: 10px;
+     }
+     .ul-nosotros{
+        list-style: none;
+     }
+     .p-nosotros{
+        background-color: antiquewhite;
+     }
+     
+    /*productos.html*/
+    
+     .nuestro-productos{
+      background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
+     }
+     /*estilo de boostrap*/
+     .contenedor-padre{
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: center;
+     }
+     .contenedor-hijo{
+      margin: 30px;
+   
+     }
+    .ul-productos{
+        list-style: none;
+     }
+      /*estilo main*/
+
+   .img-productos{
+    width: 10%;
+   }
+   .h1-productos{
+    text-align: center;
+   }
+   /*unete.html*/
+   .nav-trabaja{
+    text-align: right;
+    background-color: antiquewhite;
+    padding: 10px;
+ }
+ .ul-trabaja{
+    list-style: none;
+ }
+ .h2-trabaja{
+    text-align: center;
+ }
+ .form-trabaja{
+    text-align: center;
+ }
+/*estilo mobile*/
+@media  screen and (min-width:320px) and (max-width:600px) {
+  
+   .realista, .trippy, .graffiti, .dotwork{
+      display: none;
+   }
+   .nav-responsive{
+      padding-top: 50px;
+      
+     }
+   .nav-index, .nav-contacto, .nav-nosotros, .nav-trabaja{
+      display: none;
+   }
+    .container-h2-carrusel{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+    }
+   .contenedor-carrusel{
+    margin-bottom: 1rem;
+   }
+   
+   .contenedor-carrusel-3{
+    margin-bottom: 2rem;
+   }
+  
+   .caja-envios{
+    border: 1px solid rgb(202, 190, 64);
+    margin-bottom: 1rem;
+   }
+   .caja-envios-2{
+    border: 1px solid rgb(202, 190, 64);
+   }
+   .h3-envios{
+    text-align: center;
+   }
+   .h3-tarjeta{
+    text-align: center;
+   }
+   .camion{
+      width: 10%;
+      height: 10%;
+      transition: 2s;
+     }
+     .camion:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .tarjeta{
+      width: 10%;
+      height: 10%;
+      transition: 2s;
+     }
+     .tarjeta:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .siguenos{
+      font-size: 30px;
+     }
+    
+  
+  
+}

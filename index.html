@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <!--Link de fontawesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Link de AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Link de boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--link de css-->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Home - TiendaOnline</title>
+</head>
+
+<body>
+  <!--banner principal-->
+  <header>
+
+    <nav>
+      <div class="nav-index">
+        <ul class="ul-index">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="pages/productos.html">Productos</a>
+          </li>
+          <li>
+            <a href="pages/unete.html">Trabaja con nosotros</a>
+          </li>
+          <li>
+            <a href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <!--nav boostrap responsive-->
+      <div class="nav-responsive">
+        <div class="navbar bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/productos.html">Producto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/sobre-nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/unete.html">Unete</a>
+                  </li>
+                    </ul>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </nav>
+
+  </header>
+
+  <!--contenido principal-->
+  <main class="containter-fluid">
+    <img src="img/Mi proyecto.png" alt="">
+    <h1>Fiebre Tatto</h1>
+    
+      <p>
+        A medida que los tatuajes se van aceptando cada vez más en las sociedades occidentales, son más los adeptos a
+        esta moda.
+      </p>
+      <p> muchas personas optan por vestirse con ellos como forma estética porque ya forma parte de nuestra cultura.</p>
+      <p> Algunos deciden tener simplemente un tatuaje simbólico, mientras otros cubren sus cuerpos con auténticas obras
+        de arte.</p>
+      <p> A través de estos dibujos pretenden expresar sus inquietudes, gustos e incluso sus personalidades.</p>
+        <P>Los distintos tipos de tatuajes sirven para expresar aspectos diferentes de la sociedad.</p>
+    
+
+    </p>
+    <div class="container-h2-carrusel">
+      <div class="realista" data-aos="fade-right">
+        <h2>Realista</h2>
+        <p>Los tatuajes realistas están ganando mucha popularidad durante los últimos años. Y no es
+          de extrañar, ya que pueden considerarse auténticas obras de arte. Uno de estos tattoos bien hechos no tendrá
+          muchas diferencias con una foto o un dibujo realista.</p>
+      </div>
+      <!--carrusel realista-->
+
+      <div class="contenedor-carrusel">
+        <div class="contenedor-carrusel col-xs-12 col-lg-7">
+          <div class="row">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/realista.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/realista-2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/realista-3.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/realista-4.jpg" class="d-block w-100" alt="">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--carrusel trippy-->
+    <div class="container-2-h2-carrusel">
+      <div class="contenedor-carrusel-2">
+        <div class="contenedor-carrusel-2 col-xs-12 col-lg-7">
+          <div id="mySecondCarousel" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active col-xs-12">
+                <img src="img/trippy.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/trippy-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/trippy-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mySecondCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mySecondCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="trippy" data-aos="fade-left">
+        <h2>Trippy</h2>
+        <p>
+          Los tatuajes del trippy, una nueva tendencia que se ha ido convirtiendo en la mejor opción para plasmar tus
+          ideas de la manera más original y pintoresca posible.
+          pero la palabra trip significa viaje y haciendo deducciones podemos concluir que trippy significa viajado.
+        </p>
+      </div>
+    </div>
+    <div class="container-3-h2-carrusel">
+      <div class="graffiti" data-aos="fade-right">
+        <h2>Graffiti</h2>
+        <!--carrusel graffiti-->
+        <p>
+          El estilo graffiti o new school es un estilo de tatuaje que utiliza dibujos animados, influenciados por las
+          técnicas y estilos artísticos del graffiti y el hip-hop.
+          Diseños con colores brillantes y características exageradas. Un tipo de tatuaje con un toque juvenil y
+          transgresor.
+        </p>
+      </div>
+      <div class="contenedor-carrusel-3">
+        <div class="contenedor-carrusel-3 col-xs-12 col-lg-7">
+          <div id="carouselExampleFadee" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/graffiti2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/graffiti-2.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/graffiti-3.jpg" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="img/graffiti-4.jpg" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFadee"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFadee"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--carrusel dotwork-->
+    <div class="container-4-h2-carrusel">
+      <div class="contenedor-carrusel-4">
+        <div class="contenedor-carrusel-4 col-xs-12 col-lg-7">
+          <div id="mySecondCarousell" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/dotwork-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/dotwork-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/dotwork-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mySecondCarousell"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mySecondCarousell"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="dotwork" data-aos="fade-left">
+        <h2>Dotwork</h2>
+        <p>
+          El estilo de tatuaje dotwork o punteado es uno de los más modernos,
+        emplea muchos puntos diminutos en áreas donde normalmente se puede usar sombra y se crean formas con estos
+          puntos. Se basa en el impresionismo.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="cajas">
+      <div class="caja-envios">
+        <img class="camion" src="img/camion-de-reparto.png" alt="">
+        <h3 class="h3-envios">ENVIOS A TODO EL PAIS</h3>
+        <p> ENVIAMOS NUESTROS PRODUCTOS A TODA LA ARGENTINA.
+          <br>
+          EN EL CARRITO DE COMPRA CONOCERÁS EL COSTO 
+          <br>
+          A TU DOMICILIO O LA SUCURSAL <br> DE OCA MAS CERCANA.
+          <br>
+          <strong>ENVÍO GRATIS</strong> A PARTIR DE $ 30.000,00
+        </p>
+
+      </div>
+      <div class="caja-envios-2">
+        <img class="tarjeta" src="img/tarjeta-de-credito.png" alt="">
+        <h3 class="h3-tarjeta">PAGOS CON TARJETA DE CREDITO</h3>
+        <p> PUEDE REALIZAR EL PAGO EN FORMA SEGURA
+          <br>
+          A TRAVES DE MERCADO PAGO
+          <br>
+          TARJETA DE DEBITO Y/O CREDITO
+          <br>
+          TRANSFERENCIA BANCARIA
+          <br>
+          Y EFECTIVO.
+        </p>
+
+      </div>
+    </div>
+  </main>
+
+  <!--pie de pagina-->
+  <footer>
+    <div class="siguenos" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
+      <p>seguinos!</p>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <img src="img/instagram-logo.png" width="25px" alt="">
+          <a href="https://www.instagram.com/leantgod/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <img src="img/logo-facebook.png" width="25px" alt="">
+          <a href="https://www.facebook.com/leandro.tgod.9" target="_blank">Facebook</a>
+
+        </li>
+        <li>
+          <img src="img/logo-twitter.png" width="25px" alt="">
+          <a href="https://twitter.com/DaloisioLeandro" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <img src="img/logo-whatsapp.png" width="25px" alt="">
+          <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+
+        </li>
+      </ul>
+    </nav>
+    <h3>Todos los derechos reservados</h3>
+  </footer>
+  <!-- Link js de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <!--Link de AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
