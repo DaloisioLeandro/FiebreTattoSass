@@ -176,7 +176,10 @@ background-color: $color-body;
         padding: 10px;
      }
 }
-
+/*mq tablet*/
+@media screen and (min-width:800px) {
+   
+}
 
  main img{
   width: 10%;
