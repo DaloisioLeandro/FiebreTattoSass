@@ -178,7 +178,160 @@ background-color: $color-body;
 }
 /*mq tablet*/
 @media screen and (min-width:800px) {
-   
+   header{
+      nav{
+         ul{
+            li{
+                display: inline-block;
+                margin-left: 15px;
+                a{
+                  text-decoration: none;
+                  color: rgb(0, 0, 0);
+                }
+            }
+            
+         }
+      }
+   }
+    .nav-index{
+       text-align: right;
+       background-image: linear-gradient(rgba(202, 190, 64, 0.44),rgb(255, 255, 255));
+       padding: 10px;
+    }
+    .nav-responsive{
+      display: none;
+    }
+    .ul-index{
+        list-style: none;
+        
+     }
+     .nav-mobile{
+        display: none;
+     }
+     
+     .container-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+     }
+     .realista{
+        text-align: left;
+        margin-top: 4rem;
+        margin-left: 4rem;
+     }
+    
+     .contenedor-carrusel{
+        display: flex;
+        margin-right: 6rem;
+        justify-content: end;
+        width:$vh-width;
+        margin-left: 50%;
+        
+  
+     }
+     .container-2-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 2rem;
+     }
+     .contenedor-carrusel-2{
+        display: flex;
+        margin-left: 4rem;
+        width: $vh-width;
+  
+     }
+     .trippy{
+        text-align: left;
+        margin-top: 4rem;
+     }
+     .container-3-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+       }
+       .graffiti{
+        text-align: right;
+        margin-top: 4rem;
+        
+     }
+     .contenedor-carrusel-3{
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        width: $vh-width;
+     }
+     .contenedor-carrusel-4{
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        width: $vh-width;
+     }
+     .container-4-h2-carrusel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+     
+     }
+     .dotwork{
+        text-align: left;
+        margin-top: 4rem;
+        margin-right: 4rem;
+     }
+     .caja-envios{
+        display: inline-block;
+        font-size: 12px;
+        border: 1px solid rgb(202, 190, 64);
+         width: 30%;
+         height: 30%;
+         padding: 10px;
+         margin-right: 10px;
+         
+      }
+      .h3-envios{
+        text-align: center;
+      }
+      .caja-envios-2{
+         display: inline-block;
+          font-size: 12px;
+          border: 1px solid rgb(202, 190, 64);
+          width: 30%;
+          height: 30%;
+          padding: 10px;
+      }
+      .h3-tarjeta{
+        text-align: center;
+      }
+      .camion{
+        width: 20%;
+        height: 20%;
+        transition: 2s;
+        &:hover{
+         width: 100px;
+        height: 100px;
+        }
+      }
+      
+      .tarjeta{
+        width: 13%;
+        height: 13%;
+        transition: 2s;
+        &:hover{
+         width: 70px;
+        height: 70px;
+        }
+      }
+      .siguenos{
+         display: flex;
+         justify-content: center;
+         margin-left: 40px;
+         padding-top: 20px;
+         font-size: 30px;
+      }
+      
+       /*estilo de productos*/
+    .nav-productos{
+        text-align: right;
+        background-image: linear-gradient(rgba(202, 190, 64, 0.44));
+        padding: 10px;
+     }
 }
 
  main img{
