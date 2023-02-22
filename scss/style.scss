@@ -405,7 +405,6 @@ background-color: $color-body;
     .nav-nosotros{
         text-align: right;
         background-image: linear-gradient(rgba(202, 190, 64, 0.44),rgb(255, 255, 255));
-        padding: 10px;
      }
      .ul-nosotros{
         list-style: none;
@@ -462,7 +461,6 @@ background-color: $color-body;
    .realista, .graffiti, .trippy, .dotwork{
      transform: none;
    }
-   
    .nav-responsive{
       padding-top: 50px;
       
@@ -476,11 +474,15 @@ background-color: $color-body;
     }
    .contenedor-carrusel{
     margin-bottom: 1rem;
+
    }
+   
    
    .contenedor-carrusel-3{
     margin-bottom: 2rem;
+   
    }
+   
   
    .caja-envios{
     border: 1px solid rgb(202, 190, 64);
@@ -516,7 +518,5 @@ background-color: $color-body;
      .siguenos{
       font-size: 30px;
      }
-    
-  
-  
+
 }

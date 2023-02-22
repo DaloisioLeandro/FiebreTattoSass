@@ -296,8 +296,7 @@ footer {
 /*sobre nosotros.html*/
 .nav-nosotros {
   text-align: right;
-  background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
-  padding: 10px; }
+  background-image: linear-gradient(rgba(202, 190, 64, 0.44), white); }
 
 .ul-nosotros {
   list-style: none; }
