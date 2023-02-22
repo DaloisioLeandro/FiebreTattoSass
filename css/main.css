@@ -42,7 +42,7 @@ body {
     margin-right: 6rem;
     justify-content: end;
     width: 35vh;
-    margin-left: 50%; }
+    margin-left: 70%; }
   .container-2-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -303,7 +303,7 @@ footer {
   list-style: none; }
 
 .p-nosotros {
-  background-color: antiquewhite; }
+  background-image: linear-gradient(white, #f5f3df); }
 
 /*productos.html*/
 .nuestro-productos {
@@ -345,7 +345,7 @@ footer {
   text-align: center; }
 
 /*estilo mobile*/
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   .realista, .graffiti, .trippy, .dotwork {
     transform: none; }
   .nav-responsive {

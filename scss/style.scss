@@ -68,7 +68,7 @@ background-color: $color-body;
         margin-right: 6rem;
         justify-content: end;
         width:$vh-width;
-        margin-left: 50%;
+        margin-left: 70%;
         
   
      }
@@ -411,7 +411,7 @@ background-color: $color-body;
         list-style: none;
      }
      .p-nosotros{
-        background-color: antiquewhite;
+        background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223))
      }
      
     /*productos.html*/
@@ -457,7 +457,7 @@ background-color: $color-body;
     text-align: center;
  }
 /*estilo mobile*/
-@media  screen and (min-width:320px){
+@media  screen and (min-width:320px) and (max-width:600px) {
   
    .realista, .graffiti, .trippy, .dotwork{
      transform: none;
