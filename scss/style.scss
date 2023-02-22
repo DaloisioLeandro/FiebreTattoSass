@@ -457,11 +457,12 @@ background-color: $color-body;
     text-align: center;
  }
 /*estilo mobile*/
-@media  screen and (min-width:320px) and (max-width:600px) {
+@media  screen and (min-width:320px){
   
-   .realista, .trippy, .graffiti, .dotwork{
-      display: none;
+   .realista, .graffiti, .trippy, .dotwork{
+     transform: none;
    }
+   
    .nav-responsive{
       padding-top: 50px;
       
