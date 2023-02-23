@@ -1,4 +1,4 @@
-@import "variables/vars";
+
 
 //nesting
 *{
@@ -10,7 +10,7 @@
 /*estilos genericos*/
 body{
     font-family:'Raleway', sans-serif;
-background-color: $color-body;
+background-color: white;
 
 }
 /*estilos de home*/
@@ -67,7 +67,7 @@ background-color: $color-body;
         display: flex;
         margin-right: 6rem;
         justify-content: end;
-        width:$vh-width;
+        width:35vh;
         margin-left: 70%;
         
   
@@ -80,7 +80,7 @@ background-color: $color-body;
      .contenedor-carrusel-2{
         display: flex;
         margin-left: 4rem;
-        width: $vh-width;
+        width: 35vh;
   
      }
      .trippy{
@@ -100,13 +100,13 @@ background-color: $color-body;
         display: flex;
         margin-left: 4rem;
         margin-top: 1rem;
-        width: $vh-width;
+        width: 35vh;
      }
      .contenedor-carrusel-4{
         display: flex;
         margin-left: 4rem;
         margin-top: 1rem;
-        width: $vh-width;
+        width: 35vh;
      }
      .container-4-h2-carrusel{
         display: grid;
@@ -224,7 +224,7 @@ background-color: $color-body;
         display: flex;
         margin-right: 6rem;
         justify-content: end;
-        width:$vh-width;
+        width:35vh;
         margin-left: 50%;
         
   
@@ -237,7 +237,7 @@ background-color: $color-body;
      .contenedor-carrusel-2{
         display: flex;
         margin-left: 4rem;
-        width: $vh-width;
+        width: 35vh;
   
      }
      .trippy{
@@ -257,13 +257,13 @@ background-color: $color-body;
         display: flex;
         margin-left: 4rem;
         margin-top: 1rem;
-        width: $vh-width;
+        width: 35vh;
      }
      .contenedor-carrusel-4{
         display: flex;
         margin-left: 4rem;
         margin-top: 1rem;
-        width: $vh-width;
+        width: 35vh;
      }
      .container-4-h2-carrusel{
         display: grid;
