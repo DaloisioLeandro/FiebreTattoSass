@@ -3,6 +3,52 @@
   padding: 0;
   box-sizing: border-box; }
 
+/*estilos de productos*/
+.header-productos nav ul li {
+  display: inline-block;
+  margin-left: 15px; }
+  .header-productos nav ul li a {
+    text-decoration: none;
+    color: black; }
+
+.nav-productos {
+  text-align: right;
+  background-image: linear-gradient(rgba(202, 190, 64, 0.44));
+  padding: 10px; }
+
+.nav-productos {
+  text-align: right;
+  background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
+  padding: 10px; }
+
+.ul-productos {
+  list-style: none; }
+
+.nav-responsive-productos {
+  display: none; }
+
+.nuestro-productos {
+  background-image: linear-gradient(white, #d1cdcd); }
+
+/*estilo de boostrap*/
+.contenedor-padre {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.contenedor-hijo {
+  margin: 30px; }
+
+.ul-productos {
+  list-style: none; }
+
+.img-productos {
+  width: 10%; }
+
+.h1-productos {
+  text-align: center; }
+
 /*estilos genericos*/
 body {
   font-family: 'Raleway', sans-serif;
@@ -116,11 +162,7 @@ body {
     margin-left: 40px;
     padding-top: 20px;
     font-size: 30px; }
-  /*estilo de productos*/
-  .nav-productos {
-    text-align: right;
-    background-image: linear-gradient(rgba(202, 190, 64, 0.44));
-    padding: 10px; } }
+  /*estilo de productos*/ }
 
 /*mq tablet*/
 @media screen and (min-width: 800px) {
@@ -226,12 +268,7 @@ body {
     justify-content: center;
     margin-left: 40px;
     padding-top: 20px;
-    font-size: 30px; }
-  /*estilo de productos*/
-  .nav-productos {
-    text-align: right;
-    background-image: linear-gradient(rgba(202, 190, 64, 0.44));
-    padding: 10px; } }
+    font-size: 30px; } }
 
 main img {
   width: 10%;
@@ -304,30 +341,6 @@ footer {
 .p-nosotros {
   background-image: linear-gradient(white, #f5f3df); }
 
-/*productos.html*/
-.nuestro-productos {
-  background-image: linear-gradient(white, #d1cdcd); }
-
-/*estilo de boostrap*/
-.contenedor-padre {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.contenedor-hijo {
-  margin: 30px; }
-
-.ul-productos {
-  list-style: none; }
-
-/*estilo main*/
-.img-productos {
-  width: 10%; }
-
-.h1-productos {
-  text-align: center; }
-
 /*unete.html*/
 .nav-trabaja {
   text-align: right;
@@ -346,7 +359,7 @@ footer {
 /*estilo mobile*/
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .realista, .graffiti, .trippy, .dotwork {
-    transform: none; }
+    animation: none; }
   .nav-responsive {
     padding-top: 50px; }
   .nav-index, .nav-contacto, .nav-nosotros, .nav-trabaja {

@@ -1,0 +1,59 @@
+//variable
+
+@import"../utilidades/variables";
+/*estilos de productos*/
+.header-productos{
+    nav{
+       ul{
+          li{
+              display: inline-block;
+              margin-left: 15px;
+              a{
+                text-decoration: none;
+                color: $color-negro;
+              }
+          }
+          
+       }
+    }
+ }
+ .nav-productos{
+    text-align: right;
+    background-image: linear-gradient(rgba(202, 190, 64, 0.44));
+    padding: 10px;
+ }
+ .nav-productos{
+    text-align: right;
+    background-image: linear-gradient(rgba(202, 190, 64, 0.44),rgb(255, 255, 255));
+    padding: 10px;
+ }
+ .ul-productos{
+    list-style: none;
+ }
+ .nav-responsive-productos{
+    display: none;
+  }
+  .nuestro-productos{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
+   }
+   /*estilo de boostrap*/
+   .contenedor-padre{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .contenedor-hijo{
+    margin: 30px;
+ 
+   }
+  .ul-productos{
+      list-style: none;
+   }
+  
+ .img-productos{
+  width: 10%;
+ }
+ .h1-productos{
+  text-align: center;
+ }

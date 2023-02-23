@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+//import
+@import"html/productos";
+
 /*estilos genericos*/
 body{
     font-family:'Raleway', sans-serif;
@@ -46,7 +49,6 @@ background-color: white;
     }
     .ul-index{
         list-style: none;
-        
      }
      .nav-mobile{
         display: none;
@@ -170,11 +172,7 @@ background-color: white;
       }
       
        /*estilo de productos*/
-    .nav-productos{
-        text-align: right;
-        background-image: linear-gradient(rgba(202, 190, 64, 0.44));
-        padding: 10px;
-     }
+    
 }
 /*mq tablet*/
 @media screen and (min-width:800px) {
@@ -326,12 +324,7 @@ background-color: white;
          font-size: 30px;
       }
       
-       /*estilo de productos*/
-    .nav-productos{
-        text-align: right;
-        background-image: linear-gradient(rgba(202, 190, 64, 0.44));
-        padding: 10px;
-     }
+
 }
 
  main img{
@@ -412,34 +405,6 @@ background-color: white;
      .p-nosotros{
         background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223))
      }
-     
-    /*productos.html*/
-    
-     .nuestro-productos{
-      background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
-     }
-     /*estilo de boostrap*/
-     .contenedor-padre{
-      display: flex;
-      flex-direction:row;
-      flex-wrap: wrap;
-      justify-content: center;
-     }
-     .contenedor-hijo{
-      margin: 30px;
-   
-     }
-    .ul-productos{
-        list-style: none;
-     }
-      /*estilo main*/
-
-   .img-productos{
-    width: 10%;
-   }
-   .h1-productos{
-    text-align: center;
-   }
    /*unete.html*/
    .nav-trabaja{
     text-align: right;
@@ -459,10 +424,10 @@ background-color: white;
 @media  screen and (min-width:320px) and (max-width:600px) {
   
    .realista, .graffiti, .trippy, .dotwork{
-     transform: none;
+   animation: none;
    }
    .nav-responsive{
-      padding-top: 50px;
+      padding-top: 50px;   
       
      }
    .nav-index, .nav-contacto, .nav-nosotros, .nav-trabaja{
