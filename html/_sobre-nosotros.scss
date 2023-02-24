@@ -1,7 +1,7 @@
 @import"../utilidades/variables";
 @import"../utilidades/mixin";
 /*estilos de nosotros*/
-
+@media screen and  (min-width:1250px) {
 .header-nosotros{
     nav{
        ul{
@@ -33,3 +33,4 @@
   .siguenos-nosotros{
    @include siguenos(flex,center,40px,20px,30px);
  }
+}

@@ -1,5 +1,6 @@
 @import"../utilidades/variables";
-
+@import"../utilidades/mixin";
+@media screen and  (min-width:1250px) {
 .header-unete{
     nav{
        ul{
@@ -34,3 +35,4 @@
  .form-unete{
     text-align: $center;
  }
+}

@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@import"html/productos";
+@import"html/contacto";
+@import"html/sobre-nosotros";
+@import"html/unete";
+@import"utilidades/mixin";
+@import"utilidades/extend";
+
+@media screen and  (min-width:1250px) {
+    header{
+       nav{
+          ul{
+             li{
+                 display: inline-block;
+                 margin-left: 15px;
+                 a{
+                   text-decoration: none;
+                   color: rgb(0, 0, 0);
+                 }
+             }
+             
+          }
+       }
+    }
+     .nav-index{
+        text-align: right;
+        background-image:$color-nav;
+        padding:$px-10;
+     }
+     .nav-responsive{
+       display: $none;
+     }
+     .ul-index{
+         list-style: $none;
+      }
+      .nav-mobile{
+         display: $none;
+      }
+      
+      .container-h2-carrusel{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         padding: 10px;
+      }
+      .realista{
+         text-align: left;
+         margin-top: 4rem;
+         margin-left: 4rem;
+      }
+     
+      .contenedor-carrusel{
+       @include contenedor(flex,6rem,end,35vh,70%);
+         
+         
+   
+      }
+      .container-2-h2-carrusel{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         margin-top: 2rem;
+      }
+      .contenedor-carrusel-2{
+         display: flex;
+         margin-left: 4rem;
+         width: 35vh;
+   
+      }
+      .trippy{
+         text-align: left;
+         margin-top: 4rem;
+      }
+      .container-3-h2-carrusel{
+         display: grid;
+         grid-template-columns: repeat(2,1fr); 
+        }
+        .graffiti{
+         text-align: right;
+         margin-top: 4rem;
+         
+      }
+      .contenedor-carrusel-3{
+         display: flex;
+         margin-left: 4rem;
+         margin-top: 1rem;
+         width: 35vh;
+      }
+      .contenedor-carrusel-4{
+         display: flex;
+         margin-left: 4rem;
+         margin-top: 1rem;
+         width: 35vh;
+      }
+      .container-4-h2-carrusel{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+      
+      }
+      .dotwork{
+         text-align: left;
+         margin-top: 4rem;
+         margin-right: 4rem;
+      }
+      .caja-envios{
+       @include caja(inline-block,12px,1px solid rgb(202,190,64),30%,30%,10px,10px)
+       }
+       .h3-envios{
+         text-align: center;
+       }
+       .caja-envios-2{
+          display: inline-block;
+           font-size: 12px;
+           border: 1px solid rgb(202, 190, 64);
+           width: 30%;
+           height: 30%;
+           padding: 10px;
+       }
+       .h3-tarjeta{
+         text-align: center;
+       }
+       .camion{
+         width: 20%;
+         height: 20%;
+         transition: 2s;
+         &:hover{
+          width: 100px;
+         height: 100px;
+         }
+       }
+       
+       .tarjeta{
+         width: 13%;
+         height: 13%;
+         transition: 2s;
+         &:hover{
+          width: 70px;
+         height: 70px;
+         }
+       }
+       .siguenos{
+          display: flex;
+          justify-content: center;
+          margin-left: 40px;
+          padding-top: 20px;
+          font-size: 30px;
+       }
+     
+ }
+ 

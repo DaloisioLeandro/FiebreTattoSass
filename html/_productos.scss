@@ -4,6 +4,7 @@
 @import"../utilidades/mixin";
 @import"../utilidades/extend";
 /*estilos de productos*/
+@media screen and  (min-width:1250px) {
 .header-productos{
     nav{
        ul{
@@ -57,4 +58,5 @@
   
    font-size: 30px;
    @extend %siguenos;
+}
 }
