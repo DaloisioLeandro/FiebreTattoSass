@@ -1,4 +1,5 @@
 @import"../utilidades/mixin";
+@import"../utilidades/extend";
 
 
 .header-contacto{
@@ -20,7 +21,7 @@
 .nav-contacto{
     text-align: right;
     background-image: $color-nav;
-    padding: $px-10;
+    @extend %px;
  }
  .ul-contacto{
     list-style: $none;

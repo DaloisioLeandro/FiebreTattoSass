@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box; }
 
+.siguenos-productos {
+  margin-left: 40px;
+  padding-top: 20px; }
+
+.nav-contacto {
+  padding: 10px; }
+
 /*estilos de productos*/
 .header-productos nav ul li {
   display: inline-block;
@@ -47,9 +54,14 @@
 .siguenos-productos {
   display: flex;
   justify-content: center;
-  margin-left: 40px;
-  padding-top: 20px;
   font-size: 30px; }
+
+.siguenos-productos {
+  margin-left: 40px;
+  padding-top: 20px; }
+
+.nav-contacto {
+  padding: 10px; }
 
 .header-contacto nav ul li {
   display: inline-block;
@@ -60,8 +72,7 @@
 
 .nav-contacto {
   text-align: right;
-  background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
-  padding: 10px; }
+  background-image: linear-gradient(rgba(202, 190, 64, 0.44), white); }
 
 .ul-contacto {
   list-style: none; }
@@ -123,6 +134,13 @@
 .form-unete {
   text-align: center; }
 
+.siguenos-productos {
+  margin-left: 40px;
+  padding-top: 20px; }
+
+.nav-contacto {
+  padding: 10px; }
+
 /*estilos genericos*/
 body {
   font-family: 'Raleway', sans-serif;
@@ -154,7 +172,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px; }
   .realista {
-    text-align: left; }
+    text-align: left;
+    margin-top: 4rem;
+    margin-left: 4rem; }
   .contenedor-carrusel {
     display: flex;
     margin-right: 6rem;

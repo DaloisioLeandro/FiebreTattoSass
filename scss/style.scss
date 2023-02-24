@@ -65,7 +65,8 @@ background-color: white;
      }
      .realista{
         text-align: left;
-        @extend %bordes;
+        margin-top: 4rem;
+        margin-left: 4rem;
      }
     
      .contenedor-carrusel{
@@ -100,8 +101,9 @@ background-color: white;
      }
      .contenedor-carrusel-3{
         display: flex;
+        margin-left: 4rem;
+        margin-top: 1rem;
         width: 35vh;
-        @extend %margin;
      }
      .contenedor-carrusel-4{
         display: flex;
