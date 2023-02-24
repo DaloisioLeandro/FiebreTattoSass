@@ -84,10 +84,7 @@
          
       }
       .contenedor-carrusel-3{
-         display: flex;
-         margin-left: 4rem;
-         margin-top: 1rem;
-         width: 35vh;
+         @extend %medidas;
       }
       .contenedor-carrusel-4{
          display: flex;
