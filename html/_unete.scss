@@ -1,0 +1,36 @@
+@import"../utilidades/variables";
+
+.header-unete{
+    nav{
+       ul{
+          li{
+              display: inline-block;
+              margin-left: 15px;
+              a{
+                text-decoration: none;
+                color: $color-negro;
+              }
+          }
+          
+       }
+    }
+ }
+ .nav-responsive-unete{
+    display: none;
+  }
+ .nav-unete{
+    text-align: right;
+    background-image:$color-nav;
+    padding: $px-10;
+
+ }
+ .ul-unete{
+    list-style: none;
+ }
+ 
+ .h2-unete{
+    text-align: $center;
+ }
+ .form-unete{
+    text-align: $center;
+ }

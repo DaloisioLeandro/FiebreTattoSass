@@ -1,4 +1,35 @@
 @import"../utilidades/variables";
-
+@import"../utilidades/mixin";
 /*estilos de nosotros*/
 
+.header-nosotros{
+    nav{
+       ul{
+          li{
+              display: inline-block;
+              margin-left: 15px;
+              a{
+                text-decoration: $none;
+                color: $color-negro;
+              }
+          }
+          
+       }
+    }
+ }
+ .nav-nosotros{
+    text-align: right;
+    background-image:$color-nav;
+ }
+ .ul-nosotros{
+    list-style: $none;
+ }
+ .p-nosotros{
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223))
+ }
+ .nav-responsive-nosotros{
+    display: none;
+  }
+  .siguenos-nosotros{
+   @include siguenos(flex,center,40px,20px,30px);
+ }

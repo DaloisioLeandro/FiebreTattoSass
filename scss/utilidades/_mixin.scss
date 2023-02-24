@@ -1,0 +1,41 @@
+//mixin con parametros
+//home
+@mixin contenedor($display,$margin-right,$justify-content,$width,$margin-left){
+display: $display;
+margin-right: $margin-right;
+justify-content: $justify-content;
+width: $width;
+margin-left: $margin-left;
+}
+@mixin caja($display,$font-size,$border,$width,$height,$padding,$margin-right){
+    display: $display;
+    font-size: $font-size;
+    border: $border;
+     width: $width;
+     height:$height;
+     padding: $padding;
+     margin-right: $margin-right;
+}
+//productos
+@mixin contenedor-padre($display,$flex-direction,$flex-wrap,$justify-content){
+    display: $display;
+    flex-direction:$flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+}
+
+//nosotros
+@mixin siguenos($display,$justify-content,$margin-left,$padding-top,$font-size){
+    display: $display;
+    justify-content: $justify-content;
+    margin-left: $margin-left;
+    padding-top: $padding-top;
+    font-size: $font-size;
+}
+
+//contacto
+@mixin h2($text-align,$font-size,$padding-bottom){
+    text-align: $text-align;
+    font-size: $font-size;
+    padding-bottom: $padding-bottom;
+}

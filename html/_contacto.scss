@@ -1,0 +1,30 @@
+@import"../utilidades/mixin";
+
+
+.header-contacto{
+    nav{
+       ul{
+          li{
+              display: inline-block;
+              margin-left: 15px;
+              a{
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+              }
+          }
+          
+       }
+    }
+ }
+ 
+.nav-contacto{
+    text-align: right;
+    background-image: $color-nav;
+    padding: $px-10;
+ }
+ .ul-contacto{
+    list-style: $none;
+ }
+.contacto-h2{
+    @include h2(center,30px,30px);
+}
