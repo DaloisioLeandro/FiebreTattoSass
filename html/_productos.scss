@@ -55,8 +55,8 @@
  .siguenos-productos{
    display: flex;
    justify-content: $center;
-  
    font-size: 30px;
-   @extend %siguenos;
+   margin-left: 40px;
+    padding-top: 20px;
 }
 }

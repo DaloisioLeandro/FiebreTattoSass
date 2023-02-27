@@ -21,7 +21,7 @@
 .nav-contacto{
     text-align: right;
     background-image: $color-nav;
-    @extend %px;
+    padding: 10px;
  }
  .ul-contacto{
     list-style: $none;
