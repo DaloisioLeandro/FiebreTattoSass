@@ -50,10 +50,7 @@
       }
      
       .contenedor-carrusel{
-       @include contenedor(flex,6rem,end,35vh,70%);
-         
-         
-   
+       @include contenedor(flex,6rem,end,35vh,7rem);
       }
       .container-2-h2-carrusel{
          display: grid;
@@ -80,7 +77,10 @@
          
       }
       .contenedor-carrusel-3{
-         @extend %medidas;
+        display:flex;
+        margin-left:4rem;
+        margin-top:1rem;
+        width:35vh;
       }
       .contenedor-carrusel-4{
          display: flex;

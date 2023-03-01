@@ -5,8 +5,7 @@
     nav{
        ul{
           li{
-              display: inline-block;
-              margin-left: 15px;
+            @include li(inline-block,15px);
               a{
                 text-decoration: none;
                 color: $color-negro;
