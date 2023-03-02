@@ -23,6 +23,7 @@ background-color: white;
 
 }
 /*mq tablet*/
+/*estilos home*/
 @media screen and (min-width:600px)and(max-width:1023px) {
    header{
       nav{
@@ -39,14 +40,13 @@ background-color: white;
          }
       }
    }
-    .nav-index8{
-       text-align: right;
-       background-image: linear-gradient(rgba(202, 190, 64, 0.44),rgb(255, 255, 255));
-       padding: 10px;
+   .nav-responsive{
+      padding-top: 50px;   
+     }
+    .nav-index{
+       display: none;
     }
-    .nav-responsive{
-      display: $none;
-    }
+    
     .ul-index{
         list-style: $none;
         
@@ -97,7 +97,7 @@ background-color: white;
        }
        .graffiti{
         text-align: right;
-        margin-top: 4rem;
+        margin-top: 2rem;
         font-size: 25px;
         margin-left: 3rem;
      }
@@ -126,10 +126,10 @@ background-color: white;
      }
      .caja-envios{
         display: inline-block;
-        font-size: 12px;
+        font-size: 15px;
         border: 1px solid rgb(202, 190, 64);
-         width: 30%;
-         height: 30%;
+         width: 35%;
+         height: 25%;
          padding: 10px;
          margin-right: 10px;
          
@@ -139,10 +139,10 @@ background-color: white;
       }
       .caja-envios-2{
          display: inline-block;
-          font-size: 12px;
+          font-size: 15px;
           border: 1px solid rgb(202, 190, 64);
-          width: 30%;
-          height: 30%;
+          width: 35%;
+          height: 40%;
           padding: 10px;
       }
       .h3-tarjeta{
@@ -226,7 +226,95 @@ main{
          }
       }
     }
+   
+   /*estilos productos*/
+   .header-productos{
+      nav{
+         ul{
+            li{
+                display: inline-block;
+                margin-left: 15px;
+                a{
+                  text-decoration: $none;
+                  color: $color-negro;
+                }
+            }
+            
+         }
+      }
    }
+   .nav-productos{
+      display:none;
+   }
+   .ul-productos{
+      list-style: $none;
+   }
+   .nav-responsive-productos{
+      padding-top: 50px;
+    }
+    .nuestro-productos{
+      background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
+     }
+     /*estilo de boostrap*/
+     .contenedor-padre{
+      display: grid;
+      grid-template-columns:repeat(1,2fr);
+      grid-template-rows: 3fr;
+     }
+     .contenedor-hijo{
+      margin: 5px;
+   
+     }
+    .ul-productos{
+        list-style: $none;
+     }
+    
+   .img-productos{
+    width: 10%;
+   }
+   .h1-productos{
+    text-align: $center;
+   }
+   .siguenos-productos{
+     display: flex;
+     justify-content: $center;
+     font-size: 30px;
+     margin-left: 40px;
+      padding-top: 20px;
+   }
+   /*estilos sobre nosotros*/
+   .header-nosotros{
+      nav{
+         ul{
+            li{
+                display: inline-block;
+                margin-left: 15px;
+                a{
+                  text-decoration: $none;
+                  color: $color-negro;
+                }
+            }
+            
+         }
+      }
+   }
+   .nav-nosotros{
+      text-align: right;
+      background-image:$color-nav;
+   }
+   .ul-nosotros{
+      list-style: $none;
+   }
+   .p-nosotros{
+      background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223))
+   }
+   .nav-responsive-nosotros{
+      display: none;
+    }
+    .siguenos-nosotros{
+     @include siguenos(flex,center,40px,20px,30px);
+   }
+  }
 
 /*estilo mobile*/
 @media  screen and (min-width:320px) and (max-width:480px) {
@@ -296,5 +384,8 @@ main{
      .siguenos{
       font-size: 30px;
      }
-   
+   /*estilos de sobre nosotros*/
+   body{
+      min-height: 100%;
+   }
 }

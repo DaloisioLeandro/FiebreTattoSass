@@ -225,6 +225,7 @@ body {
   background-color: white; }
 
 /*mq tablet*/
+/*estilos home*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   header nav ul li {
     display: inline-block;
@@ -232,11 +233,9 @@ body {
     header nav ul li a {
       text-decoration: none;
       color: black; }
-  .nav-index8 {
-    text-align: right;
-    background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
-    padding: 10px; }
   .nav-responsive {
+    padding-top: 50px; }
+  .nav-index {
     display: none; }
   .ul-index {
     list-style: none; }
@@ -274,7 +273,7 @@ body {
     grid-template-columns: repeat(2, 1fr); }
   .graffiti {
     text-align: right;
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-size: 25px;
     margin-left: 3rem; }
   .contenedor-carrusel-3 {
@@ -297,20 +296,20 @@ body {
     font-size: 25px; }
   .caja-envios {
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     border: 1px solid #cabe40;
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 25%;
     padding: 10px;
     margin-right: 10px; }
   .h3-envios {
     text-align: center; }
   .caja-envios-2 {
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     border: 1px solid #cabe40;
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 40%;
     padding: 10px; }
   .h3-tarjeta {
     text-align: center; }
@@ -375,12 +374,68 @@ main h3 {
 /*estilos footer*/
 footer {
   text-align: center;
-  background-image: linear-gradient(white, #b0adad); }
+  background-image: linear-gradient(white, #b0adad);
+  /*estilos productos*/
+  /*estilo de boostrap*/
+  /*estilos sobre nosotros*/ }
   footer nav ul li {
     display: inline-block;
     padding: 15px 15px; }
     footer nav ul li a {
       text-decoration: none; }
+  footer .header-productos nav ul li {
+    display: inline-block;
+    margin-left: 15px; }
+    footer .header-productos nav ul li a {
+      text-decoration: none;
+      color: black; }
+  footer .nav-productos {
+    display: none; }
+  footer .ul-productos {
+    list-style: none; }
+  footer .nav-responsive-productos {
+    padding-top: 50px; }
+  footer .nuestro-productos {
+    background-image: linear-gradient(white, #d1cdcd); }
+  footer .contenedor-padre {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: 3fr; }
+  footer .contenedor-hijo {
+    margin: 5px; }
+  footer .ul-productos {
+    list-style: none; }
+  footer .img-productos {
+    width: 10%; }
+  footer .h1-productos {
+    text-align: center; }
+  footer .siguenos-productos {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-left: 40px;
+    padding-top: 20px; }
+  footer .header-nosotros nav ul li {
+    display: inline-block;
+    margin-left: 15px; }
+    footer .header-nosotros nav ul li a {
+      text-decoration: none;
+      color: black; }
+  footer .nav-nosotros {
+    text-align: right;
+    background-image: linear-gradient(rgba(202, 190, 64, 0.44), white); }
+  footer .ul-nosotros {
+    list-style: none; }
+  footer .p-nosotros {
+    background-image: linear-gradient(white, #f5f3df); }
+  footer .nav-responsive-nosotros {
+    display: none; }
+  footer .siguenos-nosotros {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    padding-top: 20px;
+    font-size: 30px; }
 
 /*estilo mobile*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -423,4 +478,7 @@ footer {
   footer {
     width: 45vh; }
   .siguenos {
-    font-size: 30px; } }
+    font-size: 30px; }
+  /*estilos de sobre nosotros*/
+  body {
+    min-height: 100%; } }
