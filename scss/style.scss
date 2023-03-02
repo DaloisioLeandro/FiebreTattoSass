@@ -39,7 +39,7 @@ background-color: white;
          }
       }
    }
-    .nav-index{
+    .nav-index8{
        text-align: right;
        background-image: linear-gradient(rgba(202, 190, 64, 0.44),rgb(255, 255, 255));
        padding: 10px;
@@ -58,11 +58,10 @@ background-color: white;
      .container-h2-carrusel{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        padding: 10px;
+        margin-top: 6rem;
      }
      .realista{
         text-align: left;
-        margin-top: 4rem;
         margin-left: 4rem;
      }
     
@@ -70,10 +69,8 @@ background-color: white;
         display: flex;
         margin-right: 6rem;
         justify-content: end;
-        width:35vh;
-        margin-left: 50%;
-        
-  
+        width:45vh;
+        margin-left: 36%;
      }
      .container-2-h2-carrusel{
         display: grid;
@@ -82,13 +79,15 @@ background-color: white;
      }
      .contenedor-carrusel-2{
         display: flex;
-        margin-left: 4rem;
-        width: 35vh;
+        margin-left: 1rem;
+        width: 34vh;
   
      }
      .trippy{
         text-align: left;
         margin-top: 4rem;
+        margin-left:1rem;
+        font-size: 20px;
      }
      .container-3-h2-carrusel{
         display: grid;
@@ -106,10 +105,9 @@ background-color: white;
         width: 35vh;
      }
      .contenedor-carrusel-4{
-        display: flex;
-        margin-left: 4rem;
-        margin-top: 1rem;
-        width: 35vh;
+      display: flex;
+      margin-left: 1rem;
+      width: 34vh;
      }
      .container-4-h2-carrusel{
         display: grid;
@@ -290,7 +288,7 @@ background-color: white;
       height: 15%;
      }
      footer{
-      width:45.;
+      width:45vh;
      }
      .siguenos{
       font-size: 30px;
