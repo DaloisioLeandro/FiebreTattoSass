@@ -377,12 +377,12 @@ footer {
 
 /*estilo mobile*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .realista, .graffiti, .trippy, .dotwork {
-    animation: none; }
   .nav-responsive {
     padding-top: 50px; }
   .nav-index, .nav-contacto, .nav-nosotros, .nav-trabaja {
     display: none; }
+  .realista, .trippy, .graffiti, .dotwork {
+    animation: none; }
   .container-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -413,5 +413,7 @@ footer {
   .tarjeta:hover {
     width: 15%;
     height: 15%; }
+  footer {
+    width: 100%; }
   .siguenos {
     font-size: 30px; } }
