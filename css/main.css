@@ -42,6 +42,7 @@
     margin-left: 40px;
     padding-top: 20px; } }
 
+/*estilo de contacto*/
 @media screen and (min-width: 1250px) {
   .header-contacto nav ul li {
     display: inline-block;
@@ -84,6 +85,7 @@
     padding-top: 20px;
     font-size: 30px; } }
 
+/*estilos de unete*/
 @media screen and (min-width: 1250px) {
   .header-unete nav ul li {
     display: inline-block;
@@ -104,12 +106,13 @@
   .form-unete {
     text-align: center; } }
 
+/*estilos de home*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1200px) {
   header nav ul li {
     display: inline-block;
     margin-left: 15px; }
@@ -129,17 +132,18 @@
   .container-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px; }
+    padding: 10px;
+    height: 70px; }
   .realista {
-    text-align: left;
-    margin-top: 4rem;
-    margin-left: 4rem; }
+    text-align: right;
+    margin-top: 6rem;
+    margin-right: 4rem; }
   .contenedor-carrusel {
     display: flex;
     margin-right: 6rem;
     justify-content: end;
     width: 35vh;
-    margin-left: 7rem; }
+    margin-left: 61rem; }
   .container-2-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -150,7 +154,8 @@
     width: 35vh; }
   .trippy {
     text-align: left;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    margin-right: 4rem; }
   .container-3-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -219,9 +224,8 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: white; }
 
-/*estilos de home*/
 /*mq tablet*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   header nav ul li {
     display: inline-block;
     margin-left: 15px; }
@@ -372,7 +376,7 @@ footer {
       text-decoration: none; }
 
 /*estilo mobile*/
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .realista, .graffiti, .trippy, .dotwork {
     animation: none; }
   .nav-responsive {
