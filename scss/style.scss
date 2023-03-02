@@ -59,23 +59,25 @@ background-color: white;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         margin-top: 6rem;
+        height: 60px;
      }
      .realista{
         text-align: left;
         margin-left: 4rem;
+        font-size: 25px;
+        margin-top: 10px;
      }
     
      .contenedor-carrusel{
         display: flex;
-        margin-right: 6rem;
-        justify-content: end;
+        margin-left: 17rem;
         width:45vh;
-        margin-left: 36%;
+        
      }
      .container-2-h2-carrusel{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        margin-top: 2rem;
+        margin-top: 1rem;
      }
      .contenedor-carrusel-2{
         display: flex;
@@ -87,7 +89,7 @@ background-color: white;
         text-align: left;
         margin-top: 4rem;
         margin-left:1rem;
-        font-size: 20px;
+        font-size: 25px;
      }
      .container-3-h2-carrusel{
         display: grid;
@@ -96,18 +98,20 @@ background-color: white;
        .graffiti{
         text-align: right;
         margin-top: 4rem;
-        
+        font-size: 25px;
+        margin-left: 3rem;
      }
      .contenedor-carrusel-3{
         display: flex;
-        margin-left: 4rem;
         margin-top: 1rem;
         width: 35vh;
+        margin-left: 3rem;
      }
      .contenedor-carrusel-4{
       display: flex;
       margin-left: 1rem;
       width: 34vh;
+      margin-top: 1rem;
      }
      .container-4-h2-carrusel{
         display: grid;
@@ -117,7 +121,8 @@ background-color: white;
      .dotwork{
         text-align: left;
         margin-top: 4rem;
-        margin-right: 4rem;
+        margin-left: 1rem;
+        font-size: 25px;
      }
      .caja-envios{
         display: inline-block;
@@ -172,28 +177,26 @@ background-color: white;
       
 
 }
-
- main img{
+main{
+ text-align: center;
+  padding: 10px;
+}
+  main img{
   width: 10%;
   display: inline;
   }
- main{
- text-align: center;
-  padding: 10px;
- }
- 
-  main h1{
+   main h1{
       font-weight: bold;
       padding-bottom: 15px;
   }
- 
-  
+  .parrafo{
+      padding-bottom: 15px;
+      font-size: 25px;
+      margin: 20px 20px;
+  }
   main h3{
       text-align: left;
       padding-top: 15px;
-  }
-  main p {
-      padding-bottom: 15px;
   }
   .animacion-siguenos {
     width: 100px;
