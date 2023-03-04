@@ -524,8 +524,6 @@ main h3 {
   .nav-responsive-nosotros {
     padding-top: 50px; }
   /*estilos unete mobile*/
-  .body-unete {
-    width: 45vh; }
   .nav-unete {
     display: none; }
   .nav-responsive-unete {
@@ -540,5 +538,5 @@ main h3 {
   .h2-unete {
     text-align: center; }
   .form-unete {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center; } }
