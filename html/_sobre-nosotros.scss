@@ -21,11 +21,32 @@
     text-align: right;
     background-image:$color-nav;
  }
+ main{
+   text-align: center;
+    padding: 10px;
+  }
+    main img{
+    width: 10%;
+    display: inline;
+    }
+     main h1{
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+    .parrafo{
+        padding-bottom: 15px;
+        font-size: 25px;
+        margin: 20px 20px;
+    }
+    main h3{
+        text-align: left;
+        padding-top: 15px;
+    }
  .ul-nosotros{
     list-style: $none;
  }
  .p-nosotros{
-    background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223))
+    background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223));
  }
  .nav-responsive-nosotros{
     display: none;
@@ -33,4 +54,20 @@
   .siguenos-nosotros{
    @include siguenos(flex,center,40px,20px,30px);
  }
+  /*estilos footer*/
+  footer{
+   text-align: center;
+   background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
+   }
+   nav{
+      ul{
+         li{
+            display: inline-block;
+            padding: 15px 15px;
+            a{
+               text-decoration: $none;
+            }
+         }
+      }
+   }
 }

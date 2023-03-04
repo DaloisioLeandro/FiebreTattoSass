@@ -58,20 +58,20 @@ background-color: white;
      .container-h2-carrusel{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        margin-top: 6rem;
-        height: 60px;
+        margin-top: 12rem;
+        height: 65px;
      }
      .realista{
         text-align: left;
         margin-left: 4rem;
-        font-size: 25px;
+        font-size: 20px;
         margin-top: 10px;
      }
     
      .contenedor-carrusel{
         display: flex;
-        margin-left: 17rem;
-        width:45vh;
+        margin-left: 13rem;
+        width:60vh;
         
      }
      .container-2-h2-carrusel{
@@ -82,14 +82,15 @@ background-color: white;
      .contenedor-carrusel-2{
         display: flex;
         margin-left: 1rem;
-        width: 34vh;
+        width: 40vh;
+        margin-top: 0.5rem;
   
      }
      .trippy{
         text-align: left;
         margin-top: 4rem;
         margin-left:1rem;
-        font-size: 25px;
+        font-size: 20px;
      }
      .container-3-h2-carrusel{
         display: grid;
@@ -98,19 +99,19 @@ background-color: white;
        .graffiti{
         text-align: right;
         margin-top: 2rem;
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 3rem;
      }
      .contenedor-carrusel-3{
         display: flex;
         margin-top: 1rem;
-        width: 35vh;
+        width: 40vh;
         margin-left: 3rem;
      }
      .contenedor-carrusel-4{
       display: flex;
       margin-left: 1rem;
-      width: 34vh;
+      width: 40vh;
       margin-top: 1rem;
      }
      .container-4-h2-carrusel{
@@ -122,7 +123,7 @@ background-color: white;
         text-align: left;
         margin-top: 4rem;
         margin-left: 1rem;
-        font-size: 25px;
+        font-size: 20px;
      }
      .caja-envios{
         display: inline-block;
@@ -174,9 +175,113 @@ background-color: white;
          padding-top: 20px;
          font-size: 30px;
       }
+     /*estilos productos tablet*/
+     .nav-productos{
+        display:none;
+     }
+     .ul-productos{
+        list-style: $none;
+     }
+     .nav-responsive-productos{
+        padding-top: 50px;
+      }
+      .nuestro-productos{
+        background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
+       }
+       /*estilo de boostrap*/
+       .contenedor-padre{
+         @include contenedor-padre(flex,row,wrap,center);
+      }
+       .contenedor-hijo{
+        margin: 5px;
+     
+       }
+      .ul-productos{
+          list-style: $none;
+       }
       
+     .img-productos{
+      width: 10%;
+     }
+     .h1-productos{
+      text-align: $center;
+     }
+     .siguenos-productos{
+       display: flex;
+       justify-content: $center;
+       font-size: 30px;
+       margin-left: 40px;
+        padding-top: 20px;
+     }
+     
+     /*estilos sobre nosotros tablet*/
+     .header-nosotros{
+        nav{
+           ul{
+              li{
+                  display: inline-block;
+                  margin-left: 15px;
+                  a{
+                    text-decoration: $none;
+                    color: $color-negro;
+                  }
+              }
+              
+           }
+        }
+     }
+     .nav-nosotros{
+        display: $none;
+     }
+     .nav-responsive-nosotros{
+      padding-top: 50px;
+     }
+     .ul-nosotros{
+        list-style: $none;
+     }
+     .p-nosotros{
+        background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223));
+        font-size: 20px;
+     }
+     
+      .siguenos-nosotros{
+       @include siguenos(flex,center,40px,20px,30px);
+     }
 
+ /*estilos footer*/
+ footer{
+   text-align: center;
+   background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
+   }
+   nav{
+      ul{
+         li{
+            display: inline-block;
+            padding: 15px 15px;
+            a{
+               text-decoration: $none;
+            }
+         }
+      }
+   }
+   /*estilos de unete tablet*/
+  .nav-unete{
+   display: $none;
+  }
+  .nav-responsive-unete{
+   padding-top: 50px;
+  }
+  .parrafo-unete{
+   font-size: 25px;
+  }
+  .footer-unete{
+   padding-top: 6rem;
+  }
+  .h3-unete{
+   font-size: 40px;
+  }
 }
+
 main{
  text-align: center;
   padding: 10px;
@@ -209,117 +314,14 @@ main{
   }
   @keyframes example {
     from {top:0;}
-    to {top: 100px; color: black;}
-  }
-   /*estilos footer*/
-   footer{
-    text-align: center;
-    background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
-    nav{
-      ul{
-         li{
-            display: inline-block;
-            padding: 15px 15px;
-            a{
-            text-decoration: $none;
-            }
-         }
-      }
-    }
-   
-   /*estilos productos*/
-   .header-productos{
-      nav{
-         ul{
-            li{
-                display: inline-block;
-                margin-left: 15px;
-                a{
-                  text-decoration: $none;
-                  color: $color-negro;
-                }
-            }
-            
-         }
-      }
-   }
-   .nav-productos{
-      display:none;
-   }
-   .ul-productos{
-      list-style: $none;
-   }
-   .nav-responsive-productos{
-      padding-top: 50px;
-    }
-    .nuestro-productos{
-      background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
-     }
-     /*estilo de boostrap*/
-     .contenedor-padre{
-      display: grid;
-      grid-template-columns:repeat(1,2fr);
-      grid-template-rows: 3fr;
-     }
-     .contenedor-hijo{
-      margin: 5px;
-   
-     }
-    .ul-productos{
-        list-style: $none;
-     }
-    
-   .img-productos{
-    width: 10%;
-   }
-   .h1-productos{
-    text-align: $center;
-   }
-   .siguenos-productos{
-     display: flex;
-     justify-content: $center;
-     font-size: 30px;
-     margin-left: 40px;
-      padding-top: 20px;
-   }
-   /*estilos sobre nosotros*/
-   .header-nosotros{
-      nav{
-         ul{
-            li{
-                display: inline-block;
-                margin-left: 15px;
-                a{
-                  text-decoration: $none;
-                  color: $color-negro;
-                }
-            }
-            
-         }
-      }
-   }
-   .nav-nosotros{
-      text-align: right;
-      background-image:$color-nav;
-   }
-   .ul-nosotros{
-      list-style: $none;
-   }
-   .p-nosotros{
-      background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223))
-   }
-   .nav-responsive-nosotros{
-      display: none;
-    }
-    .siguenos-nosotros{
-     @include siguenos(flex,center,40px,20px,30px);
+    to {top: 100px; color: black;
    }
   }
 
 /*estilo mobile*/
 @media  screen and (min-width:320px) and (max-width:480px) {
   
-  
+  /*estilo home mobile*/
    .nav-responsive{
       padding-top: 50px;   
       
@@ -329,6 +331,9 @@ main{
    }
    .realista, .trippy, .graffiti, .dotwork{
       animation: $none;
+   }
+   .parrafo{
+      font-size: 1rem;
    }
     .container-h2-carrusel{
        display: grid;
@@ -378,14 +383,56 @@ main{
       width: 15%;
       height: 15%;
      }
-     footer{
-      width:45vh;
-     }
+     /*estilos footer*/
+  footer{
+   text-align: center;
+   background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
+   
+   }
+   nav{
+      ul{
+         li{
+            display: inline-block;
+            padding: 15px 15px;
+            a{
+               text-decoration: $none;
+            }
+         }
+      }
+   }
      .siguenos{
       font-size: 30px;
      }
-   /*estilos de sobre nosotros*/
-   body{
-      min-height: 100%;
+     /*estilos nosotros mobile*/
+     .nav-responsive-nosotros{
+      padding-top: 50px;
+     }
+     /*estilos unete mobile*/
+     .body-unete{
+      width: 45vh;
+     }
+     .nav-unete{
+      display: $none;
+     }
+     .nav-responsive-unete{
+      padding-top: 50px;
+     }
+     .parrafo-unete{
+      text-align: center;
+     }
+     main img{
+      width: 30%;
+      justify-content: center;
+     }
+     .footer-unete{
+      padding-top: 13rem;
+     }
+     .h2-unete{
+      text-align: center;
+     }
+     .form-unete{
+      font-size: 16px;
+      text-align: center;
+      
+     }
    }
-}
