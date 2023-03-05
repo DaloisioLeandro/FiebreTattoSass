@@ -1,10 +1,10 @@
 //media queris
 
 //nesting
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 //import
@@ -16,420 +16,469 @@
 @import"utilidades/mixin";
 @import"utilidades/extend";
 @import"utilidades/variables";
+
 /*estilos genericos*/
-body{
-    font-family:'Raleway', sans-serif;
-background-color: white;
+body {
+   font-family: 'Raleway', sans-serif;
+   background-color: white;
 
 }
-/*mq tablet*/
-/*estilos home*/
-@media screen and (min-width:600px)and(max-width:1023px) {
-   header{
-      nav{
-         ul{
-            li{
-                display: inline-block;
-                margin-left: 15px;
-                a{
-                  text-decoration: $none;
-                  color: rgb(0, 0, 0);
-                }
+
+//extend
+
+/*extend header*/
+   header {
+      nav {
+         ul {
+            li {
+               @extend %header-li;
+
+               a {
+                  @extend %header-a;
+               }
             }
-            
+
          }
       }
    }
-   .nav-responsive{
-      padding-top: 50px;   
-     }
-    .nav-index{
-       display: none;
-    }
-    
-    .ul-index{
-        list-style: $none;
-        
-     }
-     .nav-mobile{
-        display: $none;
-     }
-     
-     .container-h2-carrusel{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-top: 12rem;
-        height: 65px;
-     }
-     .realista{
-        text-align: left;
-        margin-left: 4rem;
-        font-size: 20px;
-        margin-top: 10px;
-     }
-    
-     .contenedor-carrusel{
-        display: flex;
-        margin-left: 13rem;
-        width:60vh;
-        
-     }
-     .container-2-h2-carrusel{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-top: 1rem;
-     }
-     .contenedor-carrusel-2{
-        display: flex;
-        margin-left: 1rem;
-        width: 40vh;
-        margin-top: 0.5rem;
-  
-     }
-     .trippy{
-        text-align: left;
-        margin-top: 4rem;
-        margin-left:1rem;
-        font-size: 20px;
-     }
-     .container-3-h2-carrusel{
-        display: grid;
-        grid-template-columns: repeat(2,1fr); 
-       }
-       .graffiti{
-        text-align: right;
-        margin-top: 2rem;
-        font-size: 20px;
-        margin-left: 3rem;
-     }
-     .contenedor-carrusel-3{
-        display: flex;
-        margin-top: 1rem;
-        width: 40vh;
-        margin-left: 3rem;
-     }
-     .contenedor-carrusel-4{
+    /*extend footer*/
+    footer {
+      @extend %footer;
+   }
+
+   nav {
+      ul {
+         li {
+            @extend %nav-li;
+
+            a {
+               text-decoration: $none;
+            }
+         }
+      }
+   }
+@media screen and (min-width:600px)and(max-width:1023px) {
+/*mq tablet*/
+/*estilos home*/
+
+   .nav-responsive {
+      padding-top: 50px;
+   }
+
+   .nav-index {
+      display: none;
+   }
+
+   .ul-index {
+      list-style: $none;
+
+   }
+
+   .nav-mobile {
+      display: $none;
+   }
+
+   .container-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 12rem;
+      height: 65px;
+   }
+
+   .realista {
+      text-align: left;
+      margin-left: 4rem;
+      font-size: 20px;
+      margin-top: 10px;
+   }
+
+   .contenedor-carrusel {
+      display: flex;
+      margin-left: 13rem;
+      width: 60vh;
+
+   }
+
+   .container-2-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 1rem;
+   }
+
+   .contenedor-carrusel-2 {
+      display: flex;
+      margin-left: 1rem;
+      width: 40vh;
+      margin-top: 0.5rem;
+
+   }
+
+   .trippy {
+      text-align: left;
+      margin-top: 4rem;
+      margin-left: 1rem;
+      font-size: 20px;
+   }
+
+   .container-3-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .graffiti {
+      text-align: right;
+      margin-top: 2rem;
+      font-size: 20px;
+      margin-left: 3rem;
+   }
+
+   .contenedor-carrusel-3 {
+      display: flex;
+      margin-top: 1rem;
+      width: 40vh;
+      margin-left: 3rem;
+   }
+
+   .contenedor-carrusel-4 {
       display: flex;
       margin-left: 1rem;
       width: 40vh;
       margin-top: 1rem;
-     }
-     .container-4-h2-carrusel{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-     
-     }
-     .dotwork{
-        text-align: left;
-        margin-top: 4rem;
-        margin-left: 1rem;
-        font-size: 20px;
-     }
-     .caja-envios{
-        display: inline-block;
-        font-size: 15px;
-        border: 1px solid rgb(202, 190, 64);
-         width: 35%;
-         height: 25%;
-         padding: 10px;
-         margin-right: 10px;
-         
-      }
-      .h3-envios{
-        text-align: center;
-      }
-      .caja-envios-2{
-         display: inline-block;
-          font-size: 15px;
-          border: 1px solid rgb(202, 190, 64);
-          width: 35%;
-          height: 40%;
-          padding: 10px;
-      }
-      .h3-tarjeta{
-        text-align: center;
-      }
-      .camion{
-        width: 20%;
-        height: 20%;
-        transition: 2s;
-        &:hover{
-         width: 100px;
-        height: 100px;
-        }
-      }
-      
-      .tarjeta{
-        width: 13%;
-        height: 13%;
-        transition: 2s;
-        &:hover{
-         width: 70px;
-        height: 70px;
-        }
-      }
-      .siguenos{
-         display: flex;
-         justify-content: center;
-         margin-left: 40px;
-         padding-top: 20px;
-         font-size: 30px;
-      }
-     /*estilos productos tablet*/
-     .nav-productos{
-        display:none;
-     }
-     .ul-productos{
-        list-style: $none;
-     }
-     .nav-responsive-productos{
-        padding-top: 50px;
-      }
-      .nuestro-productos{
-        background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
-       }
-       /*estilo de boostrap*/
-       .contenedor-padre{
-         @include contenedor-padre(flex,row,wrap,center);
-      }
-       .contenedor-hijo{
-        margin: 5px;
-     
-       }
-      .ul-productos{
-          list-style: $none;
-       }
-      
-     .img-productos{
-      width: 10%;
-     }
-     .h1-productos{
-      text-align: $center;
-     }
-     .siguenos-productos{
-       display: flex;
-       justify-content: $center;
-       font-size: 30px;
-       margin-left: 40px;
-        padding-top: 20px;
-     }
-     
-     /*estilos sobre nosotros tablet*/
-     .header-nosotros{
-        nav{
-           ul{
-              li{
-                  display: inline-block;
-                  margin-left: 15px;
-                  a{
-                    text-decoration: $none;
-                    color: $color-negro;
-                  }
-              }
-              
-           }
-        }
-     }
-     .nav-nosotros{
-        display: $none;
-     }
-     .nav-responsive-nosotros{
-      padding-top: 50px;
-     }
-     .ul-nosotros{
-        list-style: $none;
-     }
-     .p-nosotros{
-        background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223));
-        font-size: 20px;
-     }
-     
-      .siguenos-nosotros{
-       @include siguenos(flex,center,40px,20px,30px);
-     }
-
- /*estilos footer*/
- footer{
-   text-align: center;
-   background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
    }
-   nav{
-      ul{
-         li{
-            display: inline-block;
-            padding: 15px 15px;
-            a{
-               text-decoration: $none;
-            }
-         }
-      }
-   }
-   /*estilos de unete tablet*/
-  .nav-unete{
-   display: $none;
-  }
-  .nav-responsive-unete{
-   padding-top: 50px;
-  }
-  .parrafo-unete{
-   font-size: 25px;
-  }
-  .footer-unete{
-   padding-top: 6rem;
-  }
-  .h3-unete{
-   font-size: 40px;
-  }
-}
 
-main{
- text-align: center;
-  padding: 10px;
-}
-  main img{
-  width: 10%;
-  display: inline;
-  }
-   main h1{
-      font-weight: bold;
-      padding-bottom: 15px;
-  }
-  .parrafo{
-      padding-bottom: 15px;
-      font-size: 25px;
-      margin: 20px 20px;
-  }
-  main h3{
+   .container-4-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+
+   .dotwork {
       text-align: left;
-      padding-top: 15px;
-  }
-  .animacion-siguenos {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-repeat: black;
-    animation-name: example;
-    animation-duration: 5s;
-    font-size: 20px;
-  }
-  @keyframes example {
-    from {top:0;}
-    to {top: 100px; color: black;
+      margin-top: 4rem;
+      margin-left: 1rem;
+      font-size: 20px;
    }
-  }
+
+   .caja-envios {
+      display: inline-block;
+      font-size: 15px;
+      border: 1px solid rgb(202, 190, 64);
+      width: 35%;
+      height: 25%;
+      padding: 10px;
+      margin-right: 10px;
+
+   }
+
+   .h3-envios {
+      text-align: center;
+   }
+
+   .caja-envios-2 {
+      display: inline-block;
+      font-size: 15px;
+      border: 1px solid rgb(202, 190, 64);
+      width: 35%;
+      height: 40%;
+      padding: 10px;
+   }
+
+   .h3-tarjeta {
+      text-align: center;
+   }
+
+   .camion {
+      width: 20%;
+      height: 20%;
+      transition: 2s;
+
+      &:hover {
+         width: 100px;
+         height: 100px;
+      }
+   }
+
+   .tarjeta {
+      width: 13%;
+      height: 13%;
+      transition: 2s;
+
+      &:hover {
+         width: 70px;
+         height: 70px;
+      }
+   }
+
+   .siguenos {
+      display: flex;
+      justify-content: center;
+      margin-left: 40px;
+      padding-top: 20px;
+      font-size: 30px;
+   }
+
+   /*estilos productos tablet*/
+   .nav-productos {
+      display: none;
+   }
+
+   .ul-productos {
+      list-style: $none;
+   }
+
+   .nav-responsive-productos {
+      padding-top: 50px;
+   }
+
+   .nuestro-productos {
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 205, 205));
+   }
+
+   /*estilo de boostrap*/
+   .contenedor-padre {
+      @include contenedor-padre(flex, row, wrap, center);
+   }
+
+   .contenedor-hijo {
+      margin: 5px;
+
+   }
+
+   .ul-productos {
+      list-style: $none;
+   }
+
+   .img-productos {
+      width: 10%;
+   }
+
+   .h1-productos {
+      text-align: $center;
+   }
+
+   .siguenos-productos {
+      display: flex;
+      justify-content: $center;
+      font-size: 30px;
+      margin-left: 40px;
+      padding-top: 20px;
+   }
+
+   /*estilos sobre nosotros tablet*/
+
+   .nav-nosotros {
+      display: $none;
+   }
+
+   .nav-responsive-nosotros {
+      padding-top: 50px;
+   }
+
+   .ul-nosotros {
+      list-style: $none;
+   }
+
+   .p-nosotros {
+      background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 243, 223));
+      font-size: 20px;
+   }
+
+   .siguenos-nosotros {
+      @include siguenos(flex, center, 40px, 20px, 30px);
+   }
+
+  
+
+   /*estilos de unete tablet*/
+   .nav-unete {
+      display: $none;
+   }
+
+   .nav-responsive-unete {
+      padding-top: 50px;
+   }
+
+   .parrafo-unete {
+      font-size: 25px;
+   }
+
+   .footer-unete {
+      padding-top: 6rem;
+   }
+
+   .h3-unete {
+      font-size: 40px;
+   }
+}
+
+main {
+   text-align: center;
+   padding: 10px;
+}
+
+main img {
+   width: 10%;
+   display: inline;
+}
+
+main h1 {
+   font-weight: bold;
+   @extend %padding;
+}
+
+.parrafo {
+   @extend %padding;
+   font-size: 25px;
+   margin: 20px 20px;
+}
+
+main h3 {
+   text-align: left;
+   padding-top: 15px;
+}
+
+.animacion-siguenos {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   background-repeat: black;
+   animation-name: example;
+   animation-duration: 5s;
+   font-size: 20px;
+}
+
+@keyframes example {
+   from {
+      top: 0;
+   }
+
+   to {
+      top: 100px;
+      color: black;
+   }
+}
 
 /*estilo mobile*/
-@media  screen and (min-width:320px) and (max-width:480px) {
-  
-  /*estilo home mobile*/
-   .nav-responsive{
-      padding-top: 50px;   
-      
-     }
-   .nav-index, .nav-contacto, .nav-nosotros, .nav-trabaja{
-      display: $none;
-   }
-   .realista, .trippy, .graffiti, .dotwork{
-      animation: $none;
-   }
-   .parrafo{
-      font-size: 1rem;
-   }
-    .container-h2-carrusel{
-       display: grid;
-       grid-template-columns: repeat(1,1fr);
-       
-    }
-   .contenedor-carrusel{
-    margin-bottom: 1rem;
+@media screen and (min-width:320px) and (max-width:480px) {
+
+   /*estilo home mobile*/
+   .nav-responsive {
+      padding-top: 50px;
 
    }
-   
-   
-   .contenedor-carrusel-3{
-    margin-bottom: 2rem;
-   
-   }
-   
-  
-   .caja-envios{
-    border: 1px solid rgb(202, 190, 64);
-    margin-bottom: 1rem;
-   }
-   .caja-envios-2{
-    border: 1px solid rgb(202, 190, 64);
-   }
-   .h3-envios{
-    text-align: center;
-   }
-   .h3-tarjeta{
-    text-align: center;
-   }
-   .camion{
-      width: 10%;
-      height: 10%;
-      transition: 2s;
-     }
-     .camion:hover{
-      width: 15%;
-      height: 15%;
-     }
-     .tarjeta{
-      width: 10%;
-      height: 10%;
-      transition: 2s;
-     }
-     .tarjeta:hover{
-      width: 15%;
-      height: 15%;
-     }
-     /*estilos footer*/
-  footer{
-   text-align: center;
-   background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
-   
-   }
-   nav{
-      ul{
-         li{
-            display: inline-block;
-            padding: 15px 15px;
-            a{
-               text-decoration: $none;
-            }
-         }
-      }
-   }
-     .siguenos{
-      font-size: 30px;
-     }
-     /*estilos nosotros mobile*/
-     .nav-responsive-nosotros{
-      padding-top: 50px;
-     }
-     /*estilos unete mobile*/
-     .nav-unete{
+
+   .nav-index,
+   .nav-contacto,
+   .nav-nosotros,
+   .nav-trabaja {
       display: $none;
-     }
-     .nav-responsive-unete{
-      padding-top: 50px;
-     }
-     .parrafo-unete{
+   }
+
+   .realista,
+   .trippy,
+   .graffiti,
+   .dotwork {
+      animation: $none;
+   }
+
+   .parrafo {
+      font-size: 1rem;
+   }
+
+   .container-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+   }
+
+   .contenedor-carrusel {
+      margin-bottom: 1rem;
+
+   }
+
+
+   .contenedor-carrusel-3 {
+      margin-bottom: 2rem;
+
+   }
+
+   .caja-envios {
+      border: 1px solid rgb(202, 190, 64);
+      margin-bottom: 1rem;
+   }
+
+   .caja-envios-2 {
+      border: 1px solid rgb(202, 190, 64);
+   }
+
+   .h3-envios {
       text-align: center;
-     }
-     main img{
+   }
+
+   .h3-tarjeta {
+      text-align: center;
+   }
+
+   .camion {
+      width: 10%;
+      height: 10%;
+      transition: 2s;
+   }
+
+   .camion:hover {
+      width: 15%;
+      height: 15%;
+   }
+
+   .tarjeta {
+      width: 10%;
+      height: 10%;
+      transition: 2s;
+   }
+
+   .tarjeta:hover {
+      width: 15%;
+      height: 15%;
+   }
+
+   .siguenos {
+      font-size: 30px;
+   }
+
+   /*estilos nosotros mobile*/
+   .nav-responsive-nosotros {
+      padding-top: 50px;
+   }
+
+   /*estilos unete mobile*/
+   .nav-unete {
+      display: $none;
+   }
+
+   .nav-responsive-unete {
+      padding-top: 50px;
+   }
+
+   .parrafo-unete {
+      text-align: center;
+   }
+
+   main img {
       width: 30%;
       justify-content: center;
-     }
-     .footer-unete{
+   }
+
+   .footer-unete {
       padding-top: 13rem;
-     }
-     .h2-unete{
+   }
+
+   .h2-unete {
       text-align: center;
-     }
-     .form-unete{
+   }
+
+   .form-unete {
       font-size: 12px;
       text-align: center;
-      
-     }
+
    }
+}

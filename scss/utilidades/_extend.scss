@@ -1,7 +1,22 @@
-//home
 
-
-//productos
-
-
-//contacto
+%padding {
+        padding-bottom: 15px;
+}
+//header
+%header-li{
+        display: inline-block;
+        margin-left: 15px;
+}
+%header-a{
+         text-decoration: $none;
+         color: rgb(0, 0, 0);    
+}
+//foter
+%footer{
+        text-align: center;
+        background-image: linear-gradient(rgb(255, 255, 255), rgb(176, 173, 173));
+}
+%nav-li{
+        display: inline-block;
+        padding: 15px 15px;
+}

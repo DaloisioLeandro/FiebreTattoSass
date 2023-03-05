@@ -4,21 +4,6 @@
 @import"../utilidades/extend";
 /*estilos de productos*/
 @media screen and  (min-width:1250px) {
-.header-productos{
-    nav{
-       ul{
-          li{
-              display: inline-block;
-              margin-left: 15px;
-              a{
-                text-decoration: $none;
-                color: $color-negro;
-              }
-          }
-          
-       }
-    }
- }
  .nav-productos{
     text-align: right;
     background-image:$color-nav;

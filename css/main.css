@@ -3,14 +3,27 @@
   padding: 0;
   box-sizing: border-box; }
 
+main h1, .parrafo {
+  padding-bottom: 15px; }
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 15px; }
+
+header nav ul li a {
+  text-decoration: none;
+  color: black; }
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(white, #b0adad); }
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 15px; }
+
 /*estilos de productos*/
 @media screen and (min-width: 1250px) {
-  .header-productos nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    .header-productos nav ul li a {
-      text-decoration: none;
-      color: black; }
   .nav-productos {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
@@ -43,13 +56,26 @@
     padding-top: 20px; } }
 
 /*estilo de contacto*/
+main h1, .parrafo {
+  padding-bottom: 15px; }
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 15px; }
+
+header nav ul li a {
+  text-decoration: none;
+  color: black; }
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(white, #b0adad); }
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 15px; }
+
 @media screen and (min-width: 1250px) {
-  .header-contacto nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    .header-contacto nav ul li a {
-      text-decoration: none;
-      color: black; }
   .nav-contacto {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
@@ -63,12 +89,6 @@
 
 /*estilos de nosotros*/
 @media screen and (min-width: 1250px) {
-  .header-nosotros nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    .header-nosotros nav ul li a {
-      text-decoration: none;
-      color: black; }
   .nav-nosotros {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white); }
@@ -99,25 +119,10 @@
     justify-content: center;
     margin-left: 40px;
     padding-top: 20px;
-    font-size: 30px; }
-  /*estilos footer*/
-  footer {
-    text-align: center;
-    background-image: linear-gradient(white, #b0adad); }
-  nav ul li {
-    display: inline-block;
-    padding: 15px 15px; }
-    nav ul li a {
-      text-decoration: none; } }
+    font-size: 30px; } }
 
 /*estilos de unete*/
 @media screen and (min-width: 1250px) {
-  .header-unete nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    .header-unete nav ul li a {
-      text-decoration: none;
-      color: black; }
   .nav-responsive-unete {
     display: none; }
   .nav-unete {
@@ -137,13 +142,26 @@
   padding: 0;
   box-sizing: border-box; }
 
+main h1, .parrafo {
+  padding-bottom: 15px; }
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 15px; }
+
+header nav ul li a {
+  text-decoration: none;
+  color: black; }
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(white, #b0adad); }
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 15px; }
+
 @media screen and (min-width: 1200px) {
-  header nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    header nav ul li a {
-      text-decoration: none;
-      color: black; }
   .nav-index {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
@@ -244,20 +262,38 @@
     padding-top: 20px;
     font-size: 30px; } }
 
+main h1, .parrafo {
+  padding-bottom: 15px; }
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 15px; }
+
+header nav ul li a {
+  text-decoration: none;
+  color: black; }
+
+footer {
+  text-align: center;
+  background-image: linear-gradient(white, #b0adad); }
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 15px; }
+
 /*estilos genericos*/
 body {
   font-family: 'Raleway', sans-serif;
   background-color: white; }
 
-/*mq tablet*/
-/*estilos home*/
+/*extend header*/
+/*extend footer*/
+nav ul li a {
+  text-decoration: none; }
+
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  header nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    header nav ul li a {
-      text-decoration: none;
-      color: black; }
+  /*mq tablet*/
+  /*estilos home*/
   .nav-responsive {
     padding-top: 50px; }
   .nav-index {
@@ -389,12 +425,6 @@ body {
     margin-left: 40px;
     padding-top: 20px; }
   /*estilos sobre nosotros tablet*/
-  .header-nosotros nav ul li {
-    display: inline-block;
-    margin-left: 15px; }
-    .header-nosotros nav ul li a {
-      text-decoration: none;
-      color: black; }
   .nav-nosotros {
     display: none; }
   .nav-responsive-nosotros {
@@ -410,15 +440,6 @@ body {
     margin-left: 40px;
     padding-top: 20px;
     font-size: 30px; }
-  /*estilos footer*/
-  footer {
-    text-align: center;
-    background-image: linear-gradient(white, #b0adad); }
-  nav ul li {
-    display: inline-block;
-    padding: 15px 15px; }
-    nav ul li a {
-      text-decoration: none; }
   /*estilos de unete tablet*/
   .nav-unete {
     display: none; }
@@ -440,11 +461,9 @@ main img {
   display: inline; }
 
 main h1 {
-  font-weight: bold;
-  padding-bottom: 15px; }
+  font-weight: bold; }
 
 .parrafo {
-  padding-bottom: 15px;
   font-size: 25px;
   margin: 20px 20px; }
 
@@ -473,9 +492,15 @@ main h3 {
   /*estilo home mobile*/
   .nav-responsive {
     padding-top: 50px; }
-  .nav-index, .nav-contacto, .nav-nosotros, .nav-trabaja {
+  .nav-index,
+  .nav-contacto,
+  .nav-nosotros,
+  .nav-trabaja {
     display: none; }
-  .realista, .trippy, .graffiti, .dotwork {
+  .realista,
+  .trippy,
+  .graffiti,
+  .dotwork {
     animation: none; }
   .parrafo {
     font-size: 1rem; }
@@ -509,15 +534,6 @@ main h3 {
   .tarjeta:hover {
     width: 15%;
     height: 15%; }
-  /*estilos footer*/
-  footer {
-    text-align: center;
-    background-image: linear-gradient(white, #b0adad); }
-  nav ul li {
-    display: inline-block;
-    padding: 15px 15px; }
-    nav ul li a {
-      text-decoration: none; }
   .siguenos {
     font-size: 30px; }
   /*estilos nosotros mobile*/

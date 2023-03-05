@@ -2,21 +2,6 @@
 @import"../utilidades/mixin";
 /*estilos de nosotros*/
 @media screen and  (min-width:1250px) {
-.header-nosotros{
-    nav{
-       ul{
-          li{
-              display: inline-block;
-              margin-left: 15px;
-              a{
-                text-decoration: $none;
-                color: $color-negro;
-              }
-          }
-          
-       }
-    }
- }
  .nav-nosotros{
     text-align: right;
     background-image:$color-nav;
@@ -54,20 +39,5 @@
   .siguenos-nosotros{
    @include siguenos(flex,center,40px,20px,30px);
  }
-  /*estilos footer*/
-  footer{
-   text-align: center;
-   background-image: linear-gradient(rgb(255, 255, 255),rgb(176, 173, 173));
-   }
-   nav{
-      ul{
-         li{
-            display: inline-block;
-            padding: 15px 15px;
-            a{
-               text-decoration: $none;
-            }
-         }
-      }
-   }
+
 }

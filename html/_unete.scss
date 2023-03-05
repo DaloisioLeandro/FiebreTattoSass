@@ -2,20 +2,7 @@
 @import"../utilidades/variables";
 @import"../utilidades/mixin";
 @media screen and  (min-width:1250px) {
-.header-unete{
-    nav{
-       ul{
-          li{
-            @include li(inline-block,15px);
-              a{
-                text-decoration: none;
-                color: $color-negro;
-              }
-          }
-          
-       }
-    }
- }
+
  .nav-responsive-unete{
     display: none;
   }

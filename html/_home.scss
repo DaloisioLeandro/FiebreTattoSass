@@ -8,22 +8,9 @@
 @import"../scss/utilidades/mixin";
 @import"../scss/utilidades/extend";
 
+
+
 @media screen and  (min-width:1200px) {
-    header{
-       nav{
-          ul{
-             li{
-                 display: inline-block;
-                 margin-left: 15px;
-                 a{
-                   text-decoration: none;
-                   color: rgb(0, 0, 0);
-                 }
-             }
-             
-          }
-       }
-    }
      .nav-index{
         text-align: right;
         background-image:$color-nav;
@@ -64,7 +51,6 @@
          display: flex;
          margin-left: 4rem;
          width: 35vh;
-   
       }
       .trippy{
          text-align: left;

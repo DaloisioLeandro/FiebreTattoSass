@@ -3,21 +3,7 @@
 @import"../utilidades/extend";
 
 @media screen and  (min-width:1250px) {
-.header-contacto{
-    nav{
-       ul{
-          li{
-              display: inline-block;
-              margin-left: 15px;
-              a{
-                text-decoration: none;
-                color: rgb(0, 0, 0);
-              }
-          }
-          
-       }
-    }
- }
+
  
 .nav-contacto{
     text-align: right;
