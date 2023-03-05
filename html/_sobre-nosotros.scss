@@ -1,5 +1,6 @@
 @import"../utilidades/variables";
 @import"../utilidades/mixin";
+
 /*estilos de nosotros*/
 @media screen and  (min-width:1250px) {
  .nav-nosotros{
@@ -7,7 +8,7 @@
     background-image:$color-nav;
  }
  main{
-   text-align: center;
+   text-align: $center;
     padding: 10px;
   }
     main img{
@@ -34,7 +35,7 @@
     background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223));
  }
  .nav-responsive-nosotros{
-    display: none;
+    display: $none;
   }
   .siguenos-nosotros{
    @include siguenos(flex,center,40px,20px,30px);

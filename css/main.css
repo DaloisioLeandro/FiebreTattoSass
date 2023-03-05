@@ -220,8 +220,8 @@ nav ul li {
     grid-template-columns: repeat(2, 1fr); }
   .dotwork {
     text-align: left;
-    margin-top: 4rem;
-    margin-right: 4rem; }
+    margin-right: 4rem;
+    margin-top: 4rem; }
   .caja-envios {
     display: inline-block;
     font-size: 12px;

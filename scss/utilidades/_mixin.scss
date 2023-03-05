@@ -16,6 +16,7 @@ margin-left: $margin-left;
      padding: $padding;
      margin-right: $margin-right;
 }
+
 //productos
 @mixin contenedor-padre($display,$flex-direction,$flex-wrap,$justify-content){
     display: $display;

@@ -1,10 +1,11 @@
 /*estilos de unete*/
 @import"../utilidades/variables";
 @import"../utilidades/mixin";
+@import"../utilidades/variables";
 @media screen and  (min-width:1250px) {
 
  .nav-responsive-unete{
-    display: none;
+    display: $none;
   }
  .nav-unete{
     text-align: right;
@@ -13,7 +14,7 @@
 
  }
  .ul-unete{
-    list-style: none;
+    list-style: $none;
  }
  
  .h2-unete{
