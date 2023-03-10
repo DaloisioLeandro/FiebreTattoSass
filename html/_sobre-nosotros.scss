@@ -3,36 +3,41 @@
 
 /*estilos de nosotros*/
 @media screen and  (min-width:1250px) {
+   .body-nosotros{
+      background-image: url("../img/fondo-pantalla-nosotros.jpg");
+      
+
+   }
  .nav-nosotros{
     text-align: right;
-    background-image:$color-nav;
+    background-image:linear-gradient(rgba(202, 190, 64, 0.472),rgba(255, 255, 255, 0.34));
  }
- main{
+
+ .main-nosotros{
    text-align: $center;
     padding: 10px;
   }
-    main img{
+    .img-nosotros{
     width: 10%;
     display: inline;
     }
-     main h1{
+     .h1-main{
         font-weight: bold;
         padding-bottom: 15px;
+        color: rgb(255, 255, 255);
     }
-    .parrafo{
-        padding-bottom: 15px;
-        font-size: 25px;
-        margin: 20px 20px;
+    .h2-main{
+      color: aliceblue;
     }
-    main h3{
-        text-align: left;
-        padding-top: 15px;
-    }
+   
  .ul-nosotros{
     list-style: $none;
  }
  .p-nosotros{
-    background-image:linear-gradient(rgb(255, 255, 255),rgb(245, 243, 223));
+    background-color: rgba(240, 248, 255, 0.584);
+    font-size: 30px;
+    font-family: 'Raleway' , sans-serif;
+    
  }
  .nav-responsive-nosotros{
     display: $none;
@@ -40,5 +45,7 @@
   .siguenos-nosotros{
    @include siguenos(flex,center,40px,20px,30px);
  }
-
+.footer-nosotros{
+   background-color:rgba(240, 248, 255, 0.724);
+}
 }

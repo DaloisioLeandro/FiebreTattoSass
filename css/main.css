@@ -16,7 +16,7 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(white, #b0adad); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
 
 nav ul li {
   display: inline-block;
@@ -69,7 +69,7 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(white, #b0adad); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
 
 nav ul li {
   display: inline-block;
@@ -89,29 +89,29 @@ nav ul li {
 
 /*estilos de nosotros*/
 @media screen and (min-width: 1250px) {
+  .body-nosotros {
+    background-image: url("../img/fondo-pantalla-nosotros.jpg"); }
   .nav-nosotros {
     text-align: right;
-    background-image: linear-gradient(rgba(202, 190, 64, 0.44), white); }
-  main {
+    background-image: linear-gradient(rgba(202, 190, 64, 0.472), rgba(255, 255, 255, 0.34)); }
+  .main-nosotros {
     text-align: center;
     padding: 10px; }
-  main img {
+  .img-nosotros {
     width: 10%;
     display: inline; }
-  main h1 {
+  .h1-main {
     font-weight: bold;
-    padding-bottom: 15px; }
-  .parrafo {
     padding-bottom: 15px;
-    font-size: 25px;
-    margin: 20px 20px; }
-  main h3 {
-    text-align: left;
-    padding-top: 15px; }
+    color: white; }
+  .h2-main {
+    color: aliceblue; }
   .ul-nosotros {
     list-style: none; }
   .p-nosotros {
-    background-image: linear-gradient(white, #f5f3df); }
+    background-color: rgba(240, 248, 255, 0.584);
+    font-size: 30px;
+    font-family: 'Raleway' , sans-serif; }
   .nav-responsive-nosotros {
     display: none; }
   .siguenos-nosotros {
@@ -119,7 +119,9 @@ nav ul li {
     justify-content: center;
     margin-left: 40px;
     padding-top: 20px;
-    font-size: 30px; } }
+    font-size: 30px; }
+  .footer-nosotros {
+    background-color: rgba(240, 248, 255, 0.724); } }
 
 /*estilos de unete*/
 @media screen and (min-width: 1250px) {
@@ -131,10 +133,17 @@ nav ul li {
     padding: 10px; }
   .ul-unete {
     list-style: none; }
+  .img-trabajador {
+    display: flex; }
   .h2-unete {
-    text-align: center; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin-bottom: 6rem; }
   .form-unete {
-    text-align: center; } }
+    text-align: center;
+    margin-bottom: 6rem;
+    font-size: 1.5rem; } }
 
 /*estilos de home*/
 * {
@@ -155,7 +164,7 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(white, #b0adad); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
 
 nav ul li {
   display: inline-block;
@@ -275,7 +284,7 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(white, #b0adad); }
+  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
 
 nav ul li {
   display: inline-block;
