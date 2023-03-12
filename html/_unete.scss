@@ -7,27 +7,62 @@
  .nav-responsive-unete{
     display: $none;
   }
+  .body-unete{
+    background-image: url(../img/tatuando.jpg);
+  }
  .nav-unete{
     text-align: right;
     background-image:$color-nav;
     padding: $px-10;
 
  }
+ .titulo-unete{
+  color: aliceblue;
+ }
  .ul-unete{
     list-style: $none;
  }
- .img-trabajador{
-   display: flex;
+ .contenedor-unete{
+  background-color:rgba(3, 3, 3, 0.572);
+ 
+ }
+ .imput-text{
+  width: 400px;
+  margin-bottom: 1rem;
+ }
+ .imput-apellido{
+   width: 400px;
+   margin-bottom: 1rem;
+ }
+ .imput-email{
+  width: 420px;
+  margin-bottom: 1rem;
+ }
+ .imput-fecha{
+  width: 400px;
+ }
+ .imput-cv{
+  width: 400px;
  }
  .h2-unete{
-   display: grid;
- grid-template-columns: repeat(2,1fr);
-   text-align: center;
-   margin-bottom: 6rem;
+    text-align: $center;
+ }
+ .h2-trabaja{
+  color: aliceblue;
  }
  .form-unete{
-   text-align: center;
-   margin-bottom: 6rem;
-   font-size: 1.5rem;
+    text-align: $center;
+    color: aliceblue;
+ }
+ .footer-unete{
+  background-color: rgba(0, 0, 0, 0.718);
+ }
+ .h3-unete{
+  text-align: start;
+  color: aliceblue;
+  font-size: 1rem;
+ }
+ .siguenos{
+  color: aliceblue;
  }
 }

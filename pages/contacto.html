@@ -10,6 +10,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+  <!--Link de fontawesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--Link de AOS-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--Link de mi Bootstrap-->
@@ -20,10 +24,7 @@
   <title> Contacto- TiendaOnline</title>
 </head>
 
-<body>
-  </head>
-
-  <body>
+<body class="body-contacto">
     <!--banner principal-->
 
     <header class="header-contacto">
@@ -96,25 +97,27 @@
         <img class="img-productos" src="../img/Mi proyecto.png" alt="imagen de logo">
       </center>
       <h1>Fiebre Tatto</h1>
+      
       <h2 class="contacto-h2">Contacto</h2>
       <form>
         <fieldset>
-          <legend>Completa tus datos</legend>
-          <div>
+          <legend class="legend">Completa tus datos</legend>
+          <div class="contenedor-input">
+          <div class="nombre-contacto">
             <label for="nombre-usuario">Nombre</label>
-            <input type="text" placeholder="Leandro">
+            <input class="imput-text" type="text"  placeholder="Leandro">
           </div>
-          <div>
+          <div class="apellido-contacto">
             <label for="apellido-usuario">Apellido</label>
-            <input type="text" placeholder="Daloisio">
+            <input class="imput-apellido" type="text" placeholder="Daloisio">
           </div>
-          <div>
+          <div class="email-contacto">
             <label for="email-usuario">Email</label>
-            <input type="email" placeholder="leandrodaloisio@outlook.com">
+            <input class="imput-email" type="email" placeholder="leandrodaloisio@outlook.com">
           </div>
-          <div>
-            <label for="consulta">Consulta</label>
-            <textarea name="mensaje-usuario" cols="25" rows="5"></textarea>
+          <div class="consulta-contacto">
+            <label class="consultaa" for="consulta">Consulta</label>
+            <textarea name="mensaje-usuario" cols="60" rows="10"></textarea>
           </div>
           <div>
             <input type="submit">
@@ -122,16 +125,28 @@
           </div>
         </fieldset>
       </form>
-
-
+    </div>
     </main>
 
     <!--pie de pagina-->
-    <footer>
+    <footer class="footer-contacto">
       <div class="siguenos" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <p>seguinos!</p>
       </div>
-
+      <ul>
+        <li class="reloj">
+          <img class="img-reloj"  src="../img/tiempo-rapido.png" width="55px" alt="imagen de reloj">
+          <p class="footer-p">Horarios de atención <br>
+            Lunes a viernes de 11 a 20 hs.
+         </p>
+        </li>
+        <li class="mapa">
+          <img class="img-mapa" src="../img/mapa.png" width="45px" alt="imagen de mapa">
+          <p class="footer-p-2">Ubicación <br>
+            Av.Mitre 2034,Avellaneda.
+          </p>
+        </li>
+      </ul>
       <nav>
         <ul>
           <li>
@@ -148,13 +163,13 @@
             <a href="https://twitter.com/DaloisioLeandro" target="_blank">Twitter</a>
           </li>
           <li>
-            <img src="../img/logo-whatsapp.png" width="25px" alt="imagen logo whatsapp>
+            <img src="../img/logo-whatsapp.png" width="25px" alt="imagen logo whatsapp">
             <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
 
           </li>
         </ul>
       </nav>
-      <h3>Todos los derechos reservados</h3>
+      <h3 class="h3-contacto">Copyright © 2023 Todos los derechos reservados</h3>
     </footer>
     <!-- Link js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

@@ -7,7 +7,7 @@ justify-content: $justify-content;
 width: $width;
 margin-left: $margin-left;
 }
-@mixin caja($display,$font-size,$border,$width,$height,$padding,$margin-right){
+@mixin caja($display,$font-size,$border,$width,$height,$padding,$margin-right,$background-color){
     display: $display;
     font-size: $font-size;
     border: $border;
@@ -15,6 +15,7 @@ margin-left: $margin-left;
      height:$height;
      padding: $padding;
      margin-right: $margin-right;
+     background-color:$background-color;
 }
 
 //productos
@@ -26,12 +27,13 @@ margin-left: $margin-left;
 }
 
 //nosotros
-@mixin siguenos($display,$justify-content,$margin-left,$padding-top,$font-size){
+@mixin siguenos($display,$justify-content,$margin-left,$padding-top,$font-size,$color){
     display: $display;
     justify-content: $justify-content;
     margin-left: $margin-left;
     padding-top: $padding-top;
     font-size: $font-size;
+    color: $color;
 }
 
 //contacto

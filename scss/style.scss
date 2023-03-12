@@ -42,7 +42,8 @@ body {
       }
    }
     /*extend footer*/
-    footer {
+    footer
+     {
       @extend %footer;
    }
 
@@ -68,6 +69,7 @@ body {
    .nav-index {
       display: $none;
    }
+   
 
    .ul-index {
       list-style: $none;
@@ -285,7 +287,7 @@ body {
    }
 
    .siguenos-nosotros {
-      @include siguenos(flex, center, 40px, 20px, 30px);
+      @include siguenos(flex, center, 40px, 20px, 30px,black);
    }
 
   
@@ -369,6 +371,7 @@ main h3 {
    }
 
    .nav-index,
+   .nav-productos,
    .nav-contacto,
    .nav-nosotros,
    .nav-trabaja {
@@ -482,4 +485,12 @@ main h3 {
       text-align: $center;
 
    }
+   /*estilos contacto mobile*/
+   .body-unete{
+      background-image: url(../img/fondo-contacto.jpg);
+   }
+   /*estilos productos mobile*/
+   .nav-responsive-productos{
+   padding-top: 50px;
+}
 }

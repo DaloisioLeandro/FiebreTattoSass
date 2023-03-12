@@ -11,6 +11,11 @@
 
 
 @media screen and  (min-width:1200px) {
+   .body-home{
+      background-image: url("../img/fondo-home.jpg");
+   }
+
+
      .nav-index{
         text-align: right;
         background-image:$color-nav;
@@ -25,18 +30,31 @@
       .nav-mobile{
          display: $none;
       }
-      
+      .container-div{
+         background-color: rgba(0, 0, 0, 0.688);
+      }
+      .h1-home{
+         color: rgba(240, 248, 255, 0.758);
+      }
+        .parrafo{
+         color: rgba(240, 248, 255, 0.758);
+      }
+      .primer-carrusel{
+         background-color:rgba(0, 0, 0, 0.688);
+         color:rgba(240, 248, 255, 0.758);
+      }
       .container-h2-carrusel{
          display: grid;
          grid-template-columns: repeat(2,1fr);
          padding: 10px;
-         height: 70px;
+         height: 70px; 
       }
       .realista{
          
          text-align: right;
          margin-top: 6rem;
          margin-right: 4rem;
+
       }
      
       .contenedor-carrusel{
@@ -46,6 +64,8 @@
          display: grid;
          grid-template-columns: repeat(2,1fr);
          margin-top: 2rem;
+         background-color:rgba(0, 0, 0, 0.688);
+         color: rgba(240, 248, 255, 0.758);
       }
       .contenedor-carrusel-2{
          display: flex;
@@ -60,6 +80,9 @@
       .container-3-h2-carrusel{
          display: grid;
          grid-template-columns: repeat(2,1fr); 
+         background-color:rgba(0, 0, 0, 0.688);
+         color: rgba(240, 248, 255, 0.758);
+         margin-top: 2rem;
         }
         .graffiti{
          text-align: right;
@@ -81,6 +104,9 @@
       .container-4-h2-carrusel{
          display: grid;
          grid-template-columns: repeat(2,1fr);
+         background-color:rgba(0, 0, 0, 0.688);
+         color: rgba(240, 248, 255, 0.758);
+         margin-top: 2rem;
        
       }
       
@@ -89,8 +115,11 @@
          margin-right: 4rem;
          margin-top: 4rem;
       }
+      .cajas{
+         color: white;
+      }
       .caja-envios{
-       @include caja(inline-block,12px,1px solid rgb(202,190,64),30%,30%,10px,10px);
+       @include caja(inline-block,12px,1px solid rgb(202,190,64),30%,30%,10px,10px, rgba(0, 0, 0, 0.729));
        }
        .h3-envios{
          text-align: $center;
@@ -102,6 +131,7 @@
            width: 30%;
            height: 30%;
            padding: 10px;
+           background-color: rgba(0, 0, 0, 0.729);
        }
        .h3-tarjeta{
          text-align: $center;
@@ -110,6 +140,7 @@
          width: 20%;
          height: 20%;
          transition: 2s;
+         
          &:hover{
           width: 100px;
          height: 100px;
@@ -132,6 +163,14 @@
           padding-top: 20px;
           font-size: 30px;
        }
-     
+     .footer-home{
+      background-color: rgba(0, 0, 0, 0.718);
+     }
+     .h3-footer{
+      color: aliceblue;
+      font-size: 1rem;
+      text-align: start;
+
+     }
  }
  

@@ -16,7 +16,7 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
+  background-color: gray; }
 
 nav ul li {
   display: inline-block;
@@ -69,23 +69,79 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
+  background-color: gray; }
 
 nav ul li {
   display: inline-block;
   padding: 15px 15px; }
 
 @media screen and (min-width: 1250px) {
+  .body-contacto {
+    background-image: url(../img/fondo-contacto.jpg); }
   .nav-contacto {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
     padding: 10px; }
+  .contenedor-input {
+    background-color: rgba(3, 3, 3, 0.572); }
+  .nombre-contacto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: aliceblue; }
+  .apellido-contacto {
+    margin-bottom: 1rem;
+    color: aliceblue; }
+  .email-contacto {
+    color: aliceblue;
+    margin-bottom: 1rem; }
+  .consulta-contacto {
+    color: aliceblue; }
   .ul-contacto {
     list-style: none; }
   .contacto-h2 {
     text-align: center;
-    font-size: 30px;
-    padding-bottom: 30px; } }
+    font-size: 60px;
+    padding-bottom: 20px; }
+  .legend {
+    font-size: 3rem; }
+  ul li {
+    list-style: none; }
+  .reloj {
+    display: inline-block;
+    justify-content: left;
+    padding-right: 100px; }
+  .mapa {
+    display: inline-block;
+    justify-content: right; }
+  .img-reloj:hover {
+    width: 70px;
+    height: 70px; }
+  .img-mapa:hover {
+    width: 60px;
+    height: 60px; } }
+
+.imput-text {
+  width: 400px;
+  margin-bottom: 1rem; }
+
+.imput-apellido {
+  width: 400px;
+  margin-bottom: 1rem; }
+
+.imput-email {
+  width: 420px;
+  margin-bottom: 1rem; }
+
+.footer-contacto {
+  background-color: rgba(0, 0, 0, 0.718);
+  max-height: 100%;
+  color: aliceblue; }
+
+.h3-contacto {
+  text-align: start;
+  color: aliceblue;
+  font-size: 1rem; }
 
 /*estilos de nosotros*/
 @media screen and (min-width: 1250px) {
@@ -109,9 +165,10 @@ nav ul li {
   .ul-nosotros {
     list-style: none; }
   .p-nosotros {
-    background-color: rgba(240, 248, 255, 0.584);
+    background-color: rgba(0, 0, 0, 0.713);
     font-size: 30px;
-    font-family: 'Raleway' , sans-serif; }
+    font-family: 'Raleway' , sans-serif;
+    color: antiquewhite; }
   .nav-responsive-nosotros {
     display: none; }
   .siguenos-nosotros {
@@ -119,31 +176,59 @@ nav ul li {
     justify-content: center;
     margin-left: 40px;
     padding-top: 20px;
-    font-size: 30px; }
+    font-size: 30px;
+    color: white; }
   .footer-nosotros {
-    background-color: rgba(240, 248, 255, 0.724); } }
+    background-color: rgba(0, 0, 0, 0.724); }
+  .h3-footer-nosotros {
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: start; } }
 
 /*estilos de unete*/
 @media screen and (min-width: 1250px) {
   .nav-responsive-unete {
     display: none; }
+  .body-unete {
+    background-image: url(../img/tatuando.jpg); }
   .nav-unete {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
     padding: 10px; }
+  .titulo-unete {
+    color: aliceblue; }
   .ul-unete {
     list-style: none; }
-  .img-trabajador {
-    display: flex; }
+  .contenedor-unete {
+    background-color: rgba(3, 3, 3, 0.572); }
+  .imput-text {
+    width: 400px;
+    margin-bottom: 1rem; }
+  .imput-apellido {
+    width: 400px;
+    margin-bottom: 1rem; }
+  .imput-email {
+    width: 420px;
+    margin-bottom: 1rem; }
+  .imput-fecha {
+    width: 400px; }
+  .imput-cv {
+    width: 400px; }
   .h2-unete {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    margin-bottom: 6rem; }
+    text-align: center; }
+  .h2-trabaja {
+    color: aliceblue; }
   .form-unete {
     text-align: center;
-    margin-bottom: 6rem;
-    font-size: 1.5rem; } }
+    color: aliceblue; }
+  .footer-unete {
+    background-color: rgba(0, 0, 0, 0.718); }
+  .h3-unete {
+    text-align: start;
+    color: aliceblue;
+    font-size: 1rem; }
+  .siguenos {
+    color: aliceblue; } }
 
 /*estilos de home*/
 * {
@@ -164,13 +249,15 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
+  background-color: gray; }
 
 nav ul li {
   display: inline-block;
   padding: 15px 15px; }
 
 @media screen and (min-width: 1200px) {
+  .body-home {
+    background-image: url("../img/fondo-home.jpg"); }
   .nav-index {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
@@ -181,6 +268,15 @@ nav ul li {
     list-style: none; }
   .nav-mobile {
     display: none; }
+  .container-div {
+    background-color: rgba(0, 0, 0, 0.688); }
+  .h1-home {
+    color: rgba(240, 248, 255, 0.758); }
+  .parrafo {
+    color: rgba(240, 248, 255, 0.758); }
+  .primer-carrusel {
+    background-color: rgba(0, 0, 0, 0.688);
+    color: rgba(240, 248, 255, 0.758); }
   .container-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -199,7 +295,9 @@ nav ul li {
   .container-2-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.688);
+    color: rgba(240, 248, 255, 0.758); }
   .contenedor-carrusel-2 {
     display: flex;
     margin-left: 4rem;
@@ -210,7 +308,10 @@ nav ul li {
     margin-right: 4rem; }
   .container-3-h2-carrusel {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, 0.688);
+    color: rgba(240, 248, 255, 0.758);
+    margin-top: 2rem; }
   .graffiti {
     text-align: right;
     margin-top: 4rem; }
@@ -226,11 +327,16 @@ nav ul li {
     width: 35vh; }
   .container-4-h2-carrusel {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, 0.688);
+    color: rgba(240, 248, 255, 0.758);
+    margin-top: 2rem; }
   .dotwork {
     text-align: left;
     margin-right: 4rem;
     margin-top: 4rem; }
+  .cajas {
+    color: white; }
   .caja-envios {
     display: inline-block;
     font-size: 12px;
@@ -238,7 +344,8 @@ nav ul li {
     width: 30%;
     height: 30%;
     padding: 10px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.729); }
   .h3-envios {
     text-align: center; }
   .caja-envios-2 {
@@ -247,7 +354,8 @@ nav ul li {
     border: 1px solid #cabe40;
     width: 30%;
     height: 30%;
-    padding: 10px; }
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.729); }
   .h3-tarjeta {
     text-align: center; }
   .camion {
@@ -269,7 +377,13 @@ nav ul li {
     justify-content: center;
     margin-left: 40px;
     padding-top: 20px;
-    font-size: 30px; } }
+    font-size: 30px; }
+  .footer-home {
+    background-color: rgba(0, 0, 0, 0.718); }
+  .h3-footer {
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: start; } }
 
 main h1, .parrafo {
   padding-bottom: 15px; }
@@ -284,7 +398,7 @@ header nav ul li a {
 
 footer {
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.524), rgba(176, 173, 173, 0.544)); }
+  background-color: gray; }
 
 nav ul li {
   display: inline-block;
@@ -448,7 +562,8 @@ nav ul li a {
     justify-content: center;
     margin-left: 40px;
     padding-top: 20px;
-    font-size: 30px; }
+    font-size: 30px;
+    color: black; }
   /*estilos de unete tablet*/
   .nav-unete {
     display: none; }
@@ -502,6 +617,7 @@ main h3 {
   .nav-responsive {
     padding-top: 50px; }
   .nav-index,
+  .nav-productos,
   .nav-contacto,
   .nav-nosotros,
   .nav-trabaja {
@@ -564,4 +680,10 @@ main h3 {
     text-align: center; }
   .form-unete {
     font-size: 12px;
-    text-align: center; } }
+    text-align: center; }
+  /*estilos contacto mobile*/
+  .body-unete {
+    background-image: url(../img/fondo-contacto.jpg); }
+  /*estilos productos mobile*/
+  .nav-responsive-productos {
+    padding-top: 50px; } }

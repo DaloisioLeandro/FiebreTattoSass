@@ -5,8 +5,6 @@
 @media screen and  (min-width:1250px) {
    .body-nosotros{
       background-image: url("../img/fondo-pantalla-nosotros.jpg");
-      
-
    }
  .nav-nosotros{
     text-align: right;
@@ -34,18 +32,24 @@
     list-style: $none;
  }
  .p-nosotros{
-    background-color: rgba(240, 248, 255, 0.584);
+    background-color: rgba(0, 0, 0, 0.713);
     font-size: 30px;
     font-family: 'Raleway' , sans-serif;
+    color: antiquewhite;
     
  }
  .nav-responsive-nosotros{
     display: $none;
   }
   .siguenos-nosotros{
-   @include siguenos(flex,center,40px,20px,30px);
+   @include siguenos(flex,center,40px,20px,30px,white);
  }
 .footer-nosotros{
-   background-color:rgba(240, 248, 255, 0.724);
+   background-color:rgba(0, 0, 0, 0.724);
+}
+.h3-footer-nosotros{
+   color: aliceblue;
+   font-size: 1rem;
+   text-align: start;
 }
 }
