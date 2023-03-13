@@ -2,54 +2,64 @@
 @import"../utilidades/mixin";
 
 /*estilos de nosotros*/
-@media screen and  (min-width:1250px) {
-   .body-nosotros{
+@media screen and (min-width:1250px) {
+   .body-nosotros {
       background-image: url("../img/fondo-pantalla-nosotros.jpg");
    }
- .nav-nosotros{
-    text-align: right;
-    background-image:linear-gradient(rgba(202, 190, 64, 0.472),rgba(255, 255, 255, 0.34));
- }
 
- .main-nosotros{
-   text-align: $center;
-    padding: 10px;
-  }
-    .img-nosotros{
-    width: 10%;
-    display: inline;
-    }
-     .h1-main{
-        font-weight: bold;
-        padding-bottom: 15px;
-        color: rgb(255, 255, 255);
-    }
-    .h2-main{
+   .nav-nosotros {
+      text-align: right;
+      background-image: $color-nav;
+      padding: 10px;
+   }
+
+   .main-nosotros {
+      text-align: $center;
+      padding: 10px;
+   }
+
+   .img-nosotros {
+      width: 10%;
+      display: inline;
+   }
+
+   .h1-main {
+      font-weight: bold;
+      padding-bottom: 15px;
+      color: rgb(255, 255, 255);
+   }
+
+   .h2-main {
       color: aliceblue;
-    }
-   
- .ul-nosotros{
-    list-style: $none;
- }
- .p-nosotros{
-    background-color: rgba(0, 0, 0, 0.713);
-    font-size: 30px;
-    font-family: 'Raleway' , sans-serif;
-    color: antiquewhite;
-    
- }
- .nav-responsive-nosotros{
-    display: $none;
-  }
-  .siguenos-nosotros{
-   @include siguenos(flex,center,40px,20px,30px,white);
- }
-.footer-nosotros{
-   background-color:rgba(0, 0, 0, 0.724);
-}
-.h3-footer-nosotros{
-   color: aliceblue;
-   font-size: 1rem;
-   text-align: start;
-}
+   }
+
+   .ul-nosotros {
+      list-style: $none;
+   }
+
+   .p-nosotros {
+      background-color: rgba(0, 0, 0, 0.713);
+      font-size: 30px;
+      font-family: 'Raleway', sans-serif;
+      color: antiquewhite;
+
+   }
+
+   .nav-responsive-nosotros {
+      display: $none;
+   }
+
+   .siguenos-nosotros {
+      @include siguenos(flex, center, 40px, 20px, 30px, white);
+   }
+
+   .footer-nosotros {
+      background-color: rgba(0, 0, 0, 0.724);
+   }
+
+   .h3-footer-nosotros {
+      color: aliceblue;
+      font-size: 1rem;
+      text-align: start;
+   }
 }

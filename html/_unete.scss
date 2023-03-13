@@ -2,67 +2,88 @@
 @import"../utilidades/variables";
 @import"../utilidades/mixin";
 @import"../utilidades/variables";
-@media screen and  (min-width:1250px) {
 
- .nav-responsive-unete{
-    display: $none;
-  }
-  .body-unete{
-    background-image: url(../img/tatuando.jpg);
-  }
- .nav-unete{
-    text-align: right;
-    background-image:$color-nav;
-    padding: $px-10;
+@media screen and (min-width:1250px) {
 
- }
- .titulo-unete{
-  color: aliceblue;
- }
- .ul-unete{
-    list-style: $none;
- }
- .contenedor-unete{
-  background-color:rgba(3, 3, 3, 0.572);
- 
- }
- .imput-text{
-  width: 400px;
-  margin-bottom: 1rem;
- }
- .imput-apellido{
-   width: 400px;
-   margin-bottom: 1rem;
- }
- .imput-email{
-  width: 420px;
-  margin-bottom: 1rem;
- }
- .imput-fecha{
-  width: 400px;
- }
- .imput-cv{
-  width: 400px;
- }
- .h2-unete{
-    text-align: $center;
- }
- .h2-trabaja{
-  color: aliceblue;
- }
- .form-unete{
-    text-align: $center;
-    color: aliceblue;
- }
- .footer-unete{
-  background-color: rgba(0, 0, 0, 0.718);
- }
- .h3-unete{
-  text-align: start;
-  color: aliceblue;
-  font-size: 1rem;
- }
- .siguenos{
-  color: aliceblue;
- }
+   .nav-responsive-unete {
+      display: $none;
+   }
+
+   .body-unete {
+      background-image: url(../img/tatuando.jpg);
+   }
+
+   .nav-unete {
+      text-align: right;
+      background-image: $color-nav;
+      padding: $px-10;
+
+   }
+
+   .titulo-unete {
+      color: aliceblue;
+   }
+
+   .ul-unete {
+      list-style: $none;
+   }
+
+   .contenedor-unete {
+      background-color: rgba(3, 3, 3, 0.572);
+
+   }
+
+   .imput-text {
+      width: 400px;
+      margin-bottom: 1rem;
+   }
+
+   .imput-apellido {
+      width: 400px;
+      margin-bottom: 1rem;
+   }
+
+   .imput-email {
+      width: 420px;
+      margin-bottom: 1rem;
+   }
+
+   .imput-fecha {
+      width: 400px;
+   }
+
+   .imput-cv {
+      width: 400px;
+   }
+
+   .h2-unete {
+      text-align: $center;
+   }
+
+   .h2-trabaja {
+      color: aliceblue;
+      font-size: 3rem;
+   }
+   .legend{
+      font-size: 2rem;
+   }
+
+   .form-unete {
+      text-align: $center;
+      color: aliceblue;
+   }
+
+   .footer-unete {
+      background-color: rgba(0, 0, 0, 0.718);
+   }
+
+   .h3-unete {
+      text-align: start;
+      color: aliceblue;
+      font-size: 1rem;
+   }
+
+   .siguenos {
+      color: aliceblue;
+   }
 }

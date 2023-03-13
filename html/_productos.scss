@@ -1,46 +1,75 @@
-
 @import"../utilidades/variables";
 @import"../utilidades/mixin";
 @import"../utilidades/extend";
+
 /*estilos de productos*/
-@media screen and  (min-width:1250px) {
- .nav-productos{
-    text-align: right;
-    background-image:$color-nav;
-    padding: $px-10;
- }
- .ul-productos{
-    list-style: $none;
- }
- .nav-responsive-productos{
-    display: $none;
-  }
-  .nuestro-productos{
-    background-image: linear-gradient(rgb(255, 255, 255),rgb(209, 205, 205));
+@media screen and (min-width:1250px) {
+   .body-productos {
+      background-image: url("../img/fondo-productos.jpg");
    }
-   /*estilo de boostrap*/
-   .contenedor-padre{
-      @include contenedor-padre(flex,row,wrap,center);
+
+   .nav-productos {
+      text-align: right;
+      background-image: $color-nav;
+      padding: $px-10;
    }
-   .contenedor-hijo{
-    margin: 30px;
- 
-   }
-  .ul-productos{
+
+   .ul-productos {
       list-style: $none;
    }
-  
- .img-productos{
-  width: 10%;
- }
- .h1-productos{
-  text-align: $center;
- }
- .siguenos-productos{
-   display: flex;
-   justify-content: $center;
-   font-size: 30px;
-   margin-left: 40px;
-    padding-top: 20px;
-}
+
+   .nav-responsive-productos {
+      display: $none;
+   }
+
+   .h1-productos {
+      background-color: rgba(0, 0, 0, 0.728);
+      color: aliceblue;
+   }
+
+   .nuestro-productos {
+      background-color: rgba(0, 0, 0, 0.721);
+      color: aliceblue;
+   }
+
+   /*estilo de boostrap*/
+   .contenedor-padre {
+      @include contenedor-padre(flex, row, wrap, center);
+   }
+
+   .contenedor-hijo {
+      margin: 30px;
+
+   }
+
+   .ul-productos {
+      list-style: $none;
+   }
+
+   .img-productos {
+      width: 10%;
+   }
+
+   .h1-productos {
+      text-align: $center;
+   }
+
+   .siguenos-productos {
+      display: flex;
+      justify-content: $center;
+      font-size: 30px;
+      margin-left: 40px;
+      padding-top: 20px;
+      color: aliceblue;
+   }
+
+   .h3-footer-productos {
+      font-size: 1rem;
+      color: white;
+      text-align: start;
+   }
+
+   .footer-productos {
+      background-color: rgba(0, 0, 0, 0.725);
+   }
 }

@@ -27,40 +27,46 @@ body {
 //extend
 
 /*extend header*/
-   header {
-      nav {
-         ul {
-            li {
-               @extend %header-li;
-
-               a {
-                  @extend %header-a;
-               }
-            }
-
-         }
-      }
-   }
-    /*extend footer*/
-    footer
-     {
-      @extend %footer;
-   }
-
+header {
    nav {
       ul {
          li {
-            @extend %nav-li;
+            @extend %header-li;
 
             a {
-               text-decoration: $none;
+               @extend %header-a;
             }
+         }
+
+      }
+   }
+}
+
+/*extend footer*/
+footer {
+   @extend %footer;
+}
+
+nav {
+   ul {
+      li {
+         @extend %nav-li;
+
+         a {
+            text-decoration: $none;
          }
       }
    }
+}
+
 @media screen and (min-width:600px)and(max-width:1023px) {
-/*mq tablet*/
-/*estilos home*/
+
+   /*mq tablet*/
+   /*estilos home*/
+   .body-home {
+      background-image: url("../img/fondo-home.jpg");
+      color: aliceblue;
+   }
 
    .nav-responsive {
       padding-top: 50px;
@@ -69,7 +75,7 @@ body {
    .nav-index {
       display: $none;
    }
-   
+
 
    .ul-index {
       list-style: $none;
@@ -78,6 +84,14 @@ body {
 
    .nav-mobile {
       display: $none;
+   }
+
+   .container-div {
+      background-color: rgba(0, 0, 0, 0.729);
+   }
+
+   .primer-carrusel {
+      background-color: rgba(0, 0, 0, 0.729);
    }
 
    .container-h2-carrusel {
@@ -89,15 +103,17 @@ body {
 
    .realista {
       text-align: left;
-      margin-left: 4rem;
+      margin-left: 3rem;
       font-size: 20px;
       margin-top: 10px;
    }
 
    .contenedor-carrusel {
       display: flex;
-      margin-left: 13rem;
+      margin-left: 15rem;
+      margin-right: 4rem;
       width: 60vh;
+      margin-bottom: 2rem;
 
    }
 
@@ -105,6 +121,7 @@ body {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       margin-top: 1rem;
+      background-color: rgba(0, 0, 0, 0.729);
    }
 
    .contenedor-carrusel-2 {
@@ -125,6 +142,8 @@ body {
    .container-3-h2-carrusel {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      background-color: rgba(0, 0, 0, 0.729);
+      margin-top: 1rem;
    }
 
    .graffiti {
@@ -151,7 +170,8 @@ body {
    .container-4-h2-carrusel {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
+      background-color: rgba(0, 0, 0, 0.729);
+      margin-top: 1rem;
    }
 
    .dotwork {
@@ -221,6 +241,11 @@ body {
    }
 
    /*estilos productos tablet*/
+   .body-productos {
+      background-image: url("../img/fondo-productos.jpg");
+      color: aliceblue;
+   }
+
    .nav-productos {
       display: $none;
    }
@@ -234,7 +259,7 @@ body {
    }
 
    .nuestro-productos {
-      background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 205, 205));
+      background-color: rgba(0, 0, 0, 0.726)
    }
 
    /*estilo de boostrap*/
@@ -267,7 +292,23 @@ body {
       padding-top: 20px;
    }
 
+   .h2-productos {
+      color: aliceblue;
+   }
+
+   .h3-productos {
+      color: rgba(0, 0, 0, 0.877);
+   }
+
+   .h3-footer-productos {
+      font-size: 1rem;
+   }
+
    /*estilos sobre nosotros tablet*/
+   .body-nosotros {
+      background-image: url("../img/fondo-pantalla-nosotros.jpg");
+      color: aliceblue;
+   }
 
    .nav-nosotros {
       display: $none;
@@ -282,17 +323,65 @@ body {
    }
 
    .p-nosotros {
-      background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 243, 223));
+      background-color: rgba(0, 0, 0, 0.727);
       font-size: 20px;
    }
 
    .siguenos-nosotros {
-      @include siguenos(flex, center, 40px, 20px, 30px,black);
+      @include siguenos(flex, center, 40px, 20px, 30px, black);
    }
 
-  
+   /*estilos de contacto tablet*/
+   .nav-responsive-contacto {
+      padding-top: 50px;
+   }
+
+   .body-contacto {
+      background-image: url("../img/fondo-contacto.jpg");
+   }
+
+   .nav-contacto {
+      display: none;
+   }
+
+   .titulo-contacto {
+      color: aliceblue;
+   }
+
+   .contacto-h2 {
+      color: aliceblue;
+      font-size: 2rem;
+   }
+
+   .legend {
+      color: aliceblue;
+      font-size: 2rem;
+      background-color: rgba(0, 0, 0, 0.733);
+   }
+
+   .contenedor-input {
+      background-color: rgba(0, 0, 0, 0.726);
+      color: aliceblue;
+   }
+
+   ul li {
+      list-style: none;
+   }
+
+   .reloj {
+      display: inline-block;
+      padding-right: 4rem;
+   }
+
+   .mapa {
+      display: inline-block;
+   }
 
    /*estilos de unete tablet*/
+   .body-unete {
+      background-image: url("../img/tatuando.jpg")
+   }
+
    .nav-unete {
       display: $none;
    }
@@ -301,16 +390,37 @@ body {
       padding-top: 50px;
    }
 
+   .titulo-unete {
+      color: aliceblue;
+   }
+
+   .h2-unete {
+      background-color: rgba(0, 0, 0, 0.719);
+      color: aliceblue;
+      font-size: 1.5rem;
+   }
+
    .parrafo-unete {
       font-size: 25px;
    }
 
    .footer-unete {
       padding-top: 6rem;
+      color: aliceblue;
+      background-color: rgba(0, 0, 0, 0.732);
    }
 
    .h3-unete {
-      font-size: 40px;
+      font-size: 20px;
+      color: aliceblue;
+   }
+
+   .h3-footer-nosotros {
+      font-size: 1rem;
+   }
+
+   .siguenos-nosotros {
+      color: aliceblue;
    }
 }
 
@@ -363,6 +473,10 @@ main h3 {
 
 /*estilo mobile*/
 @media screen and (min-width:320px) and (max-width:480px) {
+   .body-home {
+      background-image: url("../img/fondo-home.jpg");
+      color: aliceblue;
+   }
 
    /*estilo home mobile*/
    .nav-responsive {
@@ -387,6 +501,23 @@ main h3 {
 
    .parrafo {
       font-size: 1rem;
+      background-color: rgba(0, 0, 0, 0.562);
+   }
+
+   .primer-carrusel {
+      background-color: rgba(0, 0, 0, 0.562);
+   }
+
+   .trippy {
+      background-color: rgba(0, 0, 0, 0.562);
+   }
+
+   .graffiti {
+      background-color: rgba(0, 0, 0, 0.562);
+   }
+
+   .dotwork {
+      background-color: rgba(0, 0, 0, 0.562);
    }
 
    .container-h2-carrusel {
@@ -409,10 +540,12 @@ main h3 {
    .caja-envios {
       border: 1px solid rgb(202, 190, 64);
       margin-bottom: 1rem;
+      background-color: rgba(0, 0, 0, 0.562);
    }
 
    .caja-envios-2 {
       border: 1px solid rgb(202, 190, 64);
+      background-color: rgba(0, 0, 0, 0.562);
    }
 
    .h3-envios {
@@ -449,12 +582,45 @@ main h3 {
       font-size: 30px;
    }
 
+   .h3-footer {
+      font-size: 1rem;
+   }
+
+   .footer-home {
+      background-color: rgba(0, 0, 0, 0.562);
+      font-size: 1rem;
+
+   }
+
    /*estilos nosotros mobile*/
+   .body-nosotros {
+      background-image: url("../img/fondo-pantalla-nosotros.jpg");
+      color: aliceblue;
+   }
+
    .nav-responsive-nosotros {
       padding-top: 50px;
    }
 
+   .siguenos-nosotros {
+      font-size: 30px;
+   }
+
+   .footer-nosotros {
+      background-color: rgba(0, 0, 0, 0.637);
+      padding-right: 20px;
+   }
+
+   .h3-footer-nosotros {
+      font-size: 1rem;
+   }
+
    /*estilos unete mobile*/
+   .body-unete {
+      background-image: url("../img/tatuando.jpg");
+      color: aliceblue;
+   }
+
    .nav-unete {
       display: $none;
    }
@@ -473,24 +639,91 @@ main h3 {
    }
 
    .footer-unete {
-      padding-top: 13rem;
+      padding-top: 4rem;
+      background-color: rgba(0, 0, 0, 0.655);
    }
 
    .h2-unete {
       text-align: $center;
    }
 
+   .h3-unete {
+      font-size: 1rem;
+   }
+
+   .imput-text {
+      width: 250px;
+   }
+
+   .imput-apellido {
+      width: 250px;
+   }
+
+   .imput-email {
+      width: 260px;
+   }
+
+   .imput-cv {
+      padding-top: 1rem;
+   }
+
    .form-unete {
       font-size: 12px;
       text-align: $center;
+   }
 
+   .siguenos {
+      font-size: 30px;
    }
+
    /*estilos contacto mobile*/
-   .body-unete{
-      background-image: url(../img/fondo-contacto.jpg);
+   .body-contacto {
+      background-image: url("../img/fondo-contacto.jpg");
+      color: aliceblue;
    }
+
+   .nav-responsive-contacto {
+      padding-top: 50px;
+   }
+
+   ul li {
+      list-style: none;
+   }
+
+   .consulta-input {
+      width: 250px;
+   }
+
+   .h3-contacto {
+      font-size: 1rem;
+      text-align: center;
+   }
+
    /*estilos productos mobile*/
-   .nav-responsive-productos{
-   padding-top: 50px;
-}
+   .body-productos {
+      background-image: url("../img/fondo-productos.jpg");
+      color: aliceblue;
+   }
+
+   .nav-responsive-productos {
+      padding-top: 50px;
+   }
+
+   .contenedor-padre {
+      color: black;
+      margin-left: 6px;
+   }
+
+   .siguenos-productos {
+      font-size: 30px;
+   }
+
+   .footer-productos {
+      background-color: rgba(0, 0, 0, 0.725);
+   }
+
+   .h3-footer-productos {
+      color: aliceblue;
+      font-size: 1rem;
+   }
 }

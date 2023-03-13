@@ -1,8 +1,8 @@
 /*estilos de home*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 @import"../scss/utilidades/mixin";
@@ -10,167 +10,193 @@
 
 
 
-@media screen and  (min-width:1200px) {
-   .body-home{
+@media screen and (min-width:1200px) {
+   .body-home {
       background-image: url("../img/fondo-home.jpg");
    }
 
 
-     .nav-index{
-        text-align: right;
-        background-image:$color-nav;
-        padding:$px-10;
-     }
-     .nav-responsive{
-       display: $none;
-     }
-     .ul-index{
-         list-style: $none;
-      }
-      .nav-mobile{
-         display: $none;
-      }
-      .container-div{
-         background-color: rgba(0, 0, 0, 0.688);
-      }
-      .h1-home{
-         color: rgba(240, 248, 255, 0.758);
-      }
-        .parrafo{
-         color: rgba(240, 248, 255, 0.758);
-      }
-      .primer-carrusel{
-         background-color:rgba(0, 0, 0, 0.688);
-         color:rgba(240, 248, 255, 0.758);
-      }
-      .container-h2-carrusel{
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         padding: 10px;
-         height: 70px; 
-      }
-      .realista{
-         
-         text-align: right;
-         margin-top: 6rem;
-         margin-right: 4rem;
+   .nav-index {
+      text-align: right;
+      background-image: $color-nav;
+      padding: $px-10;
+   }
 
-      }
-     
-      .contenedor-carrusel{
-       @include contenedor(flex,6rem,end,35vh,61rem);
-      }
-      .container-2-h2-carrusel{
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         margin-top: 2rem;
-         background-color:rgba(0, 0, 0, 0.688);
-         color: rgba(240, 248, 255, 0.758);
-      }
-      .contenedor-carrusel-2{
-         display: flex;
-         margin-left: 4rem;
-         width: 35vh;
-      }
-      .trippy{
-         text-align: left;
-         margin-top: 4rem;
-         margin-right: 4rem;
-      }
-      .container-3-h2-carrusel{
-         display: grid;
-         grid-template-columns: repeat(2,1fr); 
-         background-color:rgba(0, 0, 0, 0.688);
-         color: rgba(240, 248, 255, 0.758);
-         margin-top: 2rem;
-        }
-        .graffiti{
-         text-align: right;
-         margin-top: 4rem;
-         
-      }
-      .contenedor-carrusel-3{
-        display:flex;
-        margin-left:4rem;
-        margin-top:1rem;
-        width:35vh;
-      }
-      .contenedor-carrusel-4{
-         display: flex;
-         margin-left: 4rem;
-         margin-top: 1rem;
-         width: 35vh;
-      }
-      .container-4-h2-carrusel{
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         background-color:rgba(0, 0, 0, 0.688);
-         color: rgba(240, 248, 255, 0.758);
-         margin-top: 2rem;
-       
-      }
-      
-      .dotwork{
-         text-align: left;
-         margin-right: 4rem;
-         margin-top: 4rem;
-      }
-      .cajas{
-         color: white;
-      }
-      .caja-envios{
-       @include caja(inline-block,12px,1px solid rgb(202,190,64),30%,30%,10px,10px, rgba(0, 0, 0, 0.729));
-       }
-       .h3-envios{
-         text-align: $center;
-       }
-       .caja-envios-2{
-          display: inline-block;
-           font-size: 12px;
-           border: 1px solid rgb(202, 190, 64);
-           width: 30%;
-           height: 30%;
-           padding: 10px;
-           background-color: rgba(0, 0, 0, 0.729);
-       }
-       .h3-tarjeta{
-         text-align: $center;
-       }
-       .camion{
-         width: 20%;
-         height: 20%;
-         transition: 2s;
-         
-         &:hover{
-          width: 100px;
+   .nav-responsive {
+      display: $none;
+   }
+
+   .ul-index {
+      list-style: $none;
+   }
+
+   .nav-mobile {
+      display: $none;
+   }
+
+   .container-div {
+      background-color: rgba(0, 0, 0, 0.688);
+   }
+
+   .h1-home {
+      color: rgba(240, 248, 255, 0.758);
+   }
+
+   .parrafo {
+      color: rgba(240, 248, 255, 0.758);
+   }
+
+   .primer-carrusel {
+      background-color: rgba(0, 0, 0, 0.688);
+      color: rgba(240, 248, 255, 0.758);
+   }
+
+   .container-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+      height: 70px;
+   }
+
+   .realista {
+
+      text-align: right;
+      margin-top: 6rem;
+      margin-right: 4rem;
+
+   }
+
+   .contenedor-carrusel {
+      @include contenedor(flex, 6rem, end, 35vh, 61rem);
+   }
+
+   .container-2-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 2rem;
+      background-color: rgba(0, 0, 0, 0.688);
+      color: rgba(240, 248, 255, 0.758);
+   }
+
+   .contenedor-carrusel-2 {
+      display: flex;
+      margin-left: 4rem;
+      width: 35vh;
+   }
+
+   .trippy {
+      text-align: left;
+      margin-top: 4rem;
+      margin-right: 4rem;
+   }
+
+   .container-3-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: rgba(0, 0, 0, 0.688);
+      color: rgba(240, 248, 255, 0.758);
+      margin-top: 2rem;
+   }
+
+   .graffiti {
+      text-align: right;
+      margin-top: 4rem;
+
+   }
+
+   .contenedor-carrusel-3 {
+      display: flex;
+      margin-left: 4rem;
+      margin-top: 1rem;
+      width: 35vh;
+   }
+
+   .contenedor-carrusel-4 {
+      display: flex;
+      margin-left: 4rem;
+      margin-top: 1rem;
+      width: 35vh;
+   }
+
+   .container-4-h2-carrusel {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: rgba(0, 0, 0, 0.688);
+      color: rgba(240, 248, 255, 0.758);
+      margin-top: 2rem;
+
+   }
+
+   .dotwork {
+      text-align: left;
+      margin-right: 4rem;
+      margin-top: 4rem;
+   }
+
+   .cajas {
+      color: white;
+   }
+
+   .caja-envios {
+      @include caja(inline-block, 12px, 1px solid rgb(202, 190, 64), 30%, 30%, 10px, 10px, rgba(0, 0, 0, 0.729));
+   }
+
+   .h3-envios {
+      text-align: $center;
+   }
+
+   .caja-envios-2 {
+      display: inline-block;
+      font-size: 12px;
+      border: 1px solid rgb(202, 190, 64);
+      width: 30%;
+      height: 30%;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.729);
+   }
+
+   .h3-tarjeta {
+      text-align: $center;
+   }
+
+   .camion {
+      width: 20%;
+      height: 20%;
+      transition: 2s;
+
+      &:hover {
+         width: 100px;
          height: 100px;
-         }
-       }
-       
-       .tarjeta{
-         width: 13%;
-         height: 13%;
-         transition: 2s;
-         &:hover{
-          width: 70px;
+      }
+   }
+
+   .tarjeta {
+      width: 13%;
+      height: 13%;
+      transition: 2s;
+
+      &:hover {
+         width: 70px;
          height: 70px;
-         }
-       }
-       .siguenos{
-          display: flex;
-          justify-content: $center;
-          margin-left: 40px;
-          padding-top: 20px;
-          font-size: 30px;
-       }
-     .footer-home{
+      }
+   }
+
+   .siguenos {
+      display: flex;
+      justify-content: $center;
+      margin-left: 40px;
+      padding-top: 20px;
+      font-size: 30px;
+   }
+
+   .footer-home {
       background-color: rgba(0, 0, 0, 0.718);
-     }
-     .h3-footer{
+   }
+
+   .h3-footer {
       color: aliceblue;
       font-size: 1rem;
       text-align: start;
 
-     }
- }
- 
+   }
+}

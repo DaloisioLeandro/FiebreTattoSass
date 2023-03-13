@@ -15,8 +15,7 @@ header nav ul li a {
   color: black; }
 
 footer {
-  text-align: center;
-  background-color: gray; }
+  text-align: center; }
 
 nav ul li {
   display: inline-block;
@@ -24,6 +23,8 @@ nav ul li {
 
 /*estilos de productos*/
 @media screen and (min-width: 1250px) {
+  .body-productos {
+    background-image: url("../img/fondo-productos.jpg"); }
   .nav-productos {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
@@ -32,8 +33,12 @@ nav ul li {
     list-style: none; }
   .nav-responsive-productos {
     display: none; }
+  .h1-productos {
+    background-color: rgba(0, 0, 0, 0.728);
+    color: aliceblue; }
   .nuestro-productos {
-    background-image: linear-gradient(white, #d1cdcd); }
+    background-color: rgba(0, 0, 0, 0.721);
+    color: aliceblue; }
   /*estilo de boostrap*/
   .contenedor-padre {
     display: flex;
@@ -53,7 +58,14 @@ nav ul li {
     justify-content: center;
     font-size: 30px;
     margin-left: 40px;
-    padding-top: 20px; } }
+    padding-top: 20px;
+    color: aliceblue; }
+  .h3-footer-productos {
+    font-size: 1rem;
+    color: white;
+    text-align: start; }
+  .footer-productos {
+    background-color: rgba(0, 0, 0, 0.725); } }
 
 /*estilo de contacto*/
 main h1, .parrafo {
@@ -68,8 +80,7 @@ header nav ul li a {
   color: black; }
 
 footer {
-  text-align: center;
-  background-color: gray; }
+  text-align: center; }
 
 nav ul li {
   display: inline-block;
@@ -82,6 +93,8 @@ nav ul li {
     text-align: right;
     background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
     padding: 10px; }
+  .nav-responsive-contacto {
+    display: none; }
   .contenedor-input {
     background-color: rgba(3, 3, 3, 0.572); }
   .nombre-contacto {
@@ -105,8 +118,6 @@ nav ul li {
     padding-bottom: 20px; }
   .legend {
     font-size: 3rem; }
-  ul li {
-    list-style: none; }
   .reloj {
     display: inline-block;
     justify-content: left;
@@ -149,7 +160,8 @@ nav ul li {
     background-image: url("../img/fondo-pantalla-nosotros.jpg"); }
   .nav-nosotros {
     text-align: right;
-    background-image: linear-gradient(rgba(202, 190, 64, 0.472), rgba(255, 255, 255, 0.34)); }
+    background-image: linear-gradient(rgba(202, 190, 64, 0.44), white);
+    padding: 10px; }
   .main-nosotros {
     text-align: center;
     padding: 10px; }
@@ -167,7 +179,7 @@ nav ul li {
   .p-nosotros {
     background-color: rgba(0, 0, 0, 0.713);
     font-size: 30px;
-    font-family: 'Raleway' , sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: antiquewhite; }
   .nav-responsive-nosotros {
     display: none; }
@@ -217,7 +229,10 @@ nav ul li {
   .h2-unete {
     text-align: center; }
   .h2-trabaja {
-    color: aliceblue; }
+    color: aliceblue;
+    font-size: 3rem; }
+  .legend {
+    font-size: 2rem; }
   .form-unete {
     text-align: center;
     color: aliceblue; }
@@ -248,8 +263,7 @@ header nav ul li a {
   color: black; }
 
 footer {
-  text-align: center;
-  background-color: gray; }
+  text-align: center; }
 
 nav ul li {
   display: inline-block;
@@ -397,8 +411,7 @@ header nav ul li a {
   color: black; }
 
 footer {
-  text-align: center;
-  background-color: gray; }
+  text-align: center; }
 
 nav ul li {
   display: inline-block;
@@ -417,6 +430,9 @@ nav ul li a {
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   /*mq tablet*/
   /*estilos home*/
+  .body-home {
+    background-image: url("../img/fondo-home.jpg");
+    color: aliceblue; }
   .nav-responsive {
     padding-top: 50px; }
   .nav-index {
@@ -425,6 +441,10 @@ nav ul li a {
     list-style: none; }
   .nav-mobile {
     display: none; }
+  .container-div {
+    background-color: rgba(0, 0, 0, 0.729); }
+  .primer-carrusel {
+    background-color: rgba(0, 0, 0, 0.729); }
   .container-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -432,17 +452,20 @@ nav ul li a {
     height: 65px; }
   .realista {
     text-align: left;
-    margin-left: 4rem;
+    margin-left: 3rem;
     font-size: 20px;
     margin-top: 10px; }
   .contenedor-carrusel {
     display: flex;
-    margin-left: 13rem;
-    width: 60vh; }
+    margin-left: 15rem;
+    margin-right: 4rem;
+    width: 60vh;
+    margin-bottom: 2rem; }
   .container-2-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.729); }
   .contenedor-carrusel-2 {
     display: flex;
     margin-left: 1rem;
@@ -455,7 +478,9 @@ nav ul li a {
     font-size: 20px; }
   .container-3-h2-carrusel {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, 0.729);
+    margin-top: 1rem; }
   .graffiti {
     text-align: right;
     margin-top: 2rem;
@@ -473,7 +498,9 @@ nav ul li a {
     margin-top: 1rem; }
   .container-4-h2-carrusel {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 0, 0, 0.729);
+    margin-top: 1rem; }
   .dotwork {
     text-align: left;
     margin-top: 4rem;
@@ -519,6 +546,9 @@ nav ul li a {
     padding-top: 20px;
     font-size: 30px; }
   /*estilos productos tablet*/
+  .body-productos {
+    background-image: url("../img/fondo-productos.jpg");
+    color: aliceblue; }
   .nav-productos {
     display: none; }
   .ul-productos {
@@ -526,7 +556,7 @@ nav ul li a {
   .nav-responsive-productos {
     padding-top: 50px; }
   .nuestro-productos {
-    background-image: linear-gradient(white, #d1cdcd); }
+    background-color: rgba(0, 0, 0, 0.726); }
   /*estilo de boostrap*/
   .contenedor-padre {
     display: flex;
@@ -547,7 +577,16 @@ nav ul li a {
     font-size: 30px;
     margin-left: 40px;
     padding-top: 20px; }
+  .h2-productos {
+    color: aliceblue; }
+  .h3-productos {
+    color: rgba(0, 0, 0, 0.877); }
+  .h3-footer-productos {
+    font-size: 1rem; }
   /*estilos sobre nosotros tablet*/
+  .body-nosotros {
+    background-image: url("../img/fondo-pantalla-nosotros.jpg");
+    color: aliceblue; }
   .nav-nosotros {
     display: none; }
   .nav-responsive-nosotros {
@@ -555,7 +594,7 @@ nav ul li a {
   .ul-nosotros {
     list-style: none; }
   .p-nosotros {
-    background-image: linear-gradient(white, #f5f3df);
+    background-color: rgba(0, 0, 0, 0.727);
     font-size: 20px; }
   .siguenos-nosotros {
     display: flex;
@@ -564,17 +603,58 @@ nav ul li a {
     padding-top: 20px;
     font-size: 30px;
     color: black; }
+  /*estilos de contacto tablet*/
+  .nav-responsive-contacto {
+    padding-top: 50px; }
+  .body-contacto {
+    background-image: url("../img/fondo-contacto.jpg"); }
+  .nav-contacto {
+    display: none; }
+  .titulo-contacto {
+    color: aliceblue; }
+  .contacto-h2 {
+    color: aliceblue;
+    font-size: 2rem; }
+  .legend {
+    color: aliceblue;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.733); }
+  .contenedor-input {
+    background-color: rgba(0, 0, 0, 0.726);
+    color: aliceblue; }
+  ul li {
+    list-style: none; }
+  .reloj {
+    display: inline-block;
+    padding-right: 4rem; }
+  .mapa {
+    display: inline-block; }
   /*estilos de unete tablet*/
+  .body-unete {
+    background-image: url("../img/tatuando.jpg"); }
   .nav-unete {
     display: none; }
   .nav-responsive-unete {
     padding-top: 50px; }
+  .titulo-unete {
+    color: aliceblue; }
+  .h2-unete {
+    background-color: rgba(0, 0, 0, 0.719);
+    color: aliceblue;
+    font-size: 1.5rem; }
   .parrafo-unete {
     font-size: 25px; }
   .footer-unete {
-    padding-top: 6rem; }
+    padding-top: 6rem;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.732); }
   .h3-unete {
-    font-size: 40px; } }
+    font-size: 20px;
+    color: aliceblue; }
+  .h3-footer-nosotros {
+    font-size: 1rem; }
+  .siguenos-nosotros {
+    color: aliceblue; } }
 
 main {
   text-align: center;
@@ -613,6 +693,9 @@ main h3 {
 
 /*estilo mobile*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
+  .body-home {
+    background-image: url("../img/fondo-home.jpg");
+    color: aliceblue; }
   /*estilo home mobile*/
   .nav-responsive {
     padding-top: 50px; }
@@ -628,7 +711,16 @@ main h3 {
   .dotwork {
     animation: none; }
   .parrafo {
-    font-size: 1rem; }
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.562); }
+  .primer-carrusel {
+    background-color: rgba(0, 0, 0, 0.562); }
+  .trippy {
+    background-color: rgba(0, 0, 0, 0.562); }
+  .graffiti {
+    background-color: rgba(0, 0, 0, 0.562); }
+  .dotwork {
+    background-color: rgba(0, 0, 0, 0.562); }
   .container-h2-carrusel {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -638,9 +730,11 @@ main h3 {
     margin-bottom: 2rem; }
   .caja-envios {
     border: 1px solid #cabe40;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.562); }
   .caja-envios-2 {
-    border: 1px solid #cabe40; }
+    border: 1px solid #cabe40;
+    background-color: rgba(0, 0, 0, 0.562); }
   .h3-envios {
     text-align: center; }
   .h3-tarjeta {
@@ -661,10 +755,28 @@ main h3 {
     height: 15%; }
   .siguenos {
     font-size: 30px; }
+  .h3-footer {
+    font-size: 1rem; }
+  .footer-home {
+    background-color: rgba(0, 0, 0, 0.562);
+    font-size: 1rem; }
   /*estilos nosotros mobile*/
+  .body-nosotros {
+    background-image: url("../img/fondo-pantalla-nosotros.jpg");
+    color: aliceblue; }
   .nav-responsive-nosotros {
     padding-top: 50px; }
+  .siguenos-nosotros {
+    font-size: 30px; }
+  .footer-nosotros {
+    background-color: rgba(0, 0, 0, 0.637);
+    padding-right: 20px; }
+  .h3-footer-nosotros {
+    font-size: 1rem; }
   /*estilos unete mobile*/
+  .body-unete {
+    background-image: url("../img/tatuando.jpg");
+    color: aliceblue; }
   .nav-unete {
     display: none; }
   .nav-responsive-unete {
@@ -675,15 +787,51 @@ main h3 {
     width: 30%;
     justify-content: center; }
   .footer-unete {
-    padding-top: 13rem; }
+    padding-top: 4rem;
+    background-color: rgba(0, 0, 0, 0.655); }
   .h2-unete {
     text-align: center; }
+  .h3-unete {
+    font-size: 1rem; }
+  .imput-text {
+    width: 250px; }
+  .imput-apellido {
+    width: 250px; }
+  .imput-email {
+    width: 260px; }
+  .imput-cv {
+    padding-top: 1rem; }
   .form-unete {
     font-size: 12px;
     text-align: center; }
+  .siguenos {
+    font-size: 30px; }
   /*estilos contacto mobile*/
-  .body-unete {
-    background-image: url(../img/fondo-contacto.jpg); }
+  .body-contacto {
+    background-image: url("../img/fondo-contacto.jpg");
+    color: aliceblue; }
+  .nav-responsive-contacto {
+    padding-top: 50px; }
+  ul li {
+    list-style: none; }
+  .consulta-input {
+    width: 250px; }
+  .h3-contacto {
+    font-size: 1rem;
+    text-align: center; }
   /*estilos productos mobile*/
+  .body-productos {
+    background-image: url("../img/fondo-productos.jpg");
+    color: aliceblue; }
   .nav-responsive-productos {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+  .contenedor-padre {
+    color: black;
+    margin-left: 6px; }
+  .siguenos-productos {
+    font-size: 30px; }
+  .footer-productos {
+    background-color: rgba(0, 0, 0, 0.725); }
+  .h3-footer-productos {
+    color: aliceblue;
+    font-size: 1rem; } }
